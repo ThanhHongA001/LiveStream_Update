@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_button"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity_Button"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="10dp">
+        
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Button Activity_Home_Fragment01 đến 04"
+            android:textSize="15sp"
+            android:layout_marginBottom="5dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:id="@+id/Activity_Home_Fragment01"
+                android:layout_weight="1"
+                android:layout_width="wrap_content"
+                android:layout_height="42dp"
+                android:text="01"
+                android:textSize="18sp"/>
+
+            <Button
+                android:id="@+id/Activity_Home_Fragment02"
+                android:layout_weight="1"
+                android:layout_width="wrap_content"
+                android:layout_height="42dp"
+                android:text="02"
+                android:textSize="18sp"/>
+
+            <Button
+                android:id="@+id/Activity_Home_Fragment03"
+                android:layout_weight="1"
+                android:layout_width="wrap_content"
+                android:layout_height="42dp"
+                android:text="03"
+                android:textSize="18sp"/>
+
+            <Button
+                android:id="@+id/Activity_Home_Fragment04"
+                android:layout_weight="1"
+                android:layout_width="wrap_content"
+                android:layout_height="42dp"
+                android:text="04"
+                android:textSize="18sp"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="10dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Button Activity_List_LiveStream_Fragment01 đến 04"
+            android:textSize="15sp"
+            android:layout_marginBottom="5dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:id="@+id/Activity_List_LiveStream_Fragment01"
+                android:layout_weight="1"
+                android:layout_width="wrap_content"
+                android:layout_height="42dp"
+                android:text="01"
+                android:textSize="18sp"/>
+
+            <Button
+                android:id="@+id/Activity_List_LiveStream_Fragment02"
+                android:layout_weight="1"
+                android:layout_width="wrap_content"
+                android:layout_height="42dp"
+                android:text="02"
+                android:textSize="18sp"/>
+
+            <Button
+                android:id="@+id/Activity_List_LiveStream_Fragment03"
+                android:layout_weight="1"
+                android:layout_width="wrap_content"
+                android:layout_height="42dp"
+                android:text="03"
+                android:textSize="18sp"/>
+
+            <Button
+                android:id="@+id/Activity_List_LiveStream_Fragment04"
+                android:layout_weight="1"
+                android:layout_width="wrap_content"
+                android:layout_height="42dp"
+                android:text="04"
+                android:textSize="18sp"/>
+
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>
