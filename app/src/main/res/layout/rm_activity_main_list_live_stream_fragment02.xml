@@ -1,0 +1,48 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/rm_activity_main_list_live_stream_fragment02_fl_01"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:id="@+id/rm_activity_main_list_live_stream_fragment02_ll_01"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/rm_activity_main_list_live_stream_fragment02_ll_02"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:orientation="horizontal"
+            android:gravity="center">
+
+            <TextView
+                android:id="@+id/rm_activity_main_list_live_stream_fragment02_tv_01"
+                android:layout_weight="9"
+                android:layout_gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Just For"
+                android:layout_marginLeft="10dp"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/rm_activity_main_list_live_stream_fragment02_btn_01"
+                android:layout_width="wrap_content"
+                android:layout_height="36dp"
+                android:background="@color/white_transparent"
+                android:text="See all"
+                android:textColor="@color/rm_livestream_button01" />
+        </LinearLayout>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rm_activity_main_list_live_stream_fragment02_rv_01"
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+</FrameLayout>

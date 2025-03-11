@@ -1,24 +1,65 @@
 package com.example.livestream_update;
 
+import android.content.Intent;
 import android.os.Bundle;
-
-import androidx.activity.EdgeToEdge;
+import android.widget.Button;
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.core.graphics.Insets;
-import androidx.core.view.ViewCompat;
-import androidx.core.view.WindowInsetsCompat;
+import androidx.fragment.app.Fragment;
+import androidx.fragment.app.FragmentTransaction;
 
-public class MainActivity extends AppCompatActivity {
+import com.example.livestream_update.ActivityMain_Home.Fragment.MainActivity_Home_Fragment01;
+import com.example.livestream_update.ActivityMain_Home.Fragment.MainActivity_Home_Fragment02;
+import com.example.livestream_update.ActivityMain_Home.Fragment.MainActivity_Home_Fragment03;
+import com.example.livestream_update.ActivityMain_Home.Fragment.MainActivity_Home_Fragment04;
+import com.example.livestream_update.ActivityMain_Home.MainActivity_Home;
+import com.example.livestream_update.ActivityMain_List_LiveStream.Fragment.MainActivity_List_LiveStream_Fragment01;
+import com.example.livestream_update.ActivityMain_List_LiveStream.Fragment.MainActivity_List_LiveStream_Fragment02;
+import com.example.livestream_update.ActivityMain_List_LiveStream.Fragment.MainActivity_List_LiveStream_Fragment03;
+
+public class MainActivity_Button extends AppCompatActivity {
+
+    // Khai báo các Button
+    private Button btnHomeFragment01, btnHomeFragment02, btnHomeFragment03, btnHomeFragment04, btnHomeFragment05;
+    private Button btnListLiveStreamFragment01, btnListLiveStreamFragment02, btnListLiveStreamFragment03;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        EdgeToEdge.enable(this);
-        setContentView(R.layout.activity_main);
-        ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main), (v, insets) -> {
-            Insets systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars());
-            v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
-            return insets;
+        setContentView(R.layout.activity_button);
+
+        // Ánh xạ ID từ XML
+        btnHomeFragment01 = findViewById(R.id.Activity_Home_Fragment01);
+        btnHomeFragment02 = findViewById(R.id.Activity_Home_Fragment02);
+        btnHomeFragment03 = findViewById(R.id.Activity_Home_Fragment03);
+        btnHomeFragment04 = findViewById(R.id.Activity_Home_Fragment04);
+        btnHomeFragment05 = findViewById(R.id.Activity_Home_Fragment05); // Ánh xạ nút Fragment 05
+
+        btnListLiveStreamFragment01 = findViewById(R.id.Activity_List_LiveStream_Fragment01);
+        btnListLiveStreamFragment02 = findViewById(R.id.Activity_List_LiveStream_Fragment02);
+        btnListLiveStreamFragment03 = findViewById(R.id.Activity_List_LiveStream_Fragment03);
+
+        // Thiết lập sự kiện onClick cho các Button
+        btnHomeFragment01.setOnClickListener(v -> openFragment(new MainActivity_Home_Fragment01()));
+        btnHomeFragment02.setOnClickListener(v -> openFragment(new MainActivity_Home_Fragment02()));
+        btnHomeFragment03.setOnClickListener(v -> openFragment(new MainActivity_Home_Fragment03()));
+        btnHomeFragment04.setOnClickListener(v -> openFragment(new MainActivity_Home_Fragment04()));
+
+        btnListLiveStreamFragment01.setOnClickListener(v -> openFragment(new MainActivity_List_LiveStream_Fragment01()));
+        btnListLiveStreamFragment02.setOnClickListener(v -> openFragment(new MainActivity_List_LiveStream_Fragment02()));
+        btnListLiveStreamFragment03.setOnClickListener(v -> openFragment(new MainActivity_List_LiveStream_Fragment03()));
+
+        // Sự kiện chuyển sang màn MainActivity_Home khi bấm Activity_Home_Fragment05
+        btnHomeFragment05.setOnClickListener(v -> {
+            Intent intent = new Intent(MainActivity_Button.this, MainActivity_Home.class);
+            startActivity(intent);
         });
+    }
+
+    // Hàm mở Fragment mới
+    private void openFragment(Fragment fragment) {
+        FragmentTransaction transaction = getSupportFragmentManager().beginTransaction();
+        transaction.replace(android.R.id.content, fragment);
+        transaction.addToBackStack(null);
+        transaction.commit();
     }
 }

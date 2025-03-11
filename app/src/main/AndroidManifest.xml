@@ -13,7 +13,13 @@
         android:theme="@style/Theme.LiveStream_Update"
         tools:targetApi="31">
         <activity
-            android:name=".MainActivity"
+            android:name=".ActivityMain_List_LiveStream.ActivityMain_List_LiveStream"
+            android:exported="false" />
+        <activity
+            android:name=".ActivityMain_Home.MainActivity_Home"
+            android:exported="false" />
+        <activity
+            android:name=".MainActivity_Button"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

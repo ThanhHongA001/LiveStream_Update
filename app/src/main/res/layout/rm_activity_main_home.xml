@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main_home"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ActivityMain_Home.MainActivity_Home">
+
+    <!-- Toolbar -->
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/rm_backgroup_tool_bar_new"
+        android:layout_width="match_parent"
+        android:layout_height="90dp"
+        android:background="@drawable/rm_bg_tool_bar_new"
+        android:padding="15dp">
+
+        <LinearLayout
+            android:id="@+id/rm_activity_main01_linearlayout01"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="8dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <androidx.constraintlayout.utils.widget.ImageFilterView
+                android:id="@+id/rm_activity_main01_img_avata01"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:src="@drawable/rm_ic_home_invite" />
+
+            <TextView
+                android:id="@+id/rm_activity_main01_tv01_name01"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="10dp"
+                android:layout_weight="9"
+                android:text="Hi, Hoaintt"
+                android:textSize="20sp" />
+
+            <ImageView
+                android:id="@+id/rm_activity_main01_imgview03"
+                android:layout_width="36dp"
+                android:layout_height="36dp"
+                android:layout_gravity="center"
+                android:layout_marginLeft="5dp"
+                android:background="@drawable/rm_ic_toolbar_search_new" />
+        </LinearLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <!-- RecyclerView để hiển thị các Fragment -->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rm_activity_main_home_recyclerview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:background="@color/rm_bg_backgroup_home"/>
+
+    <!-- Thanh điều hướng -->
+    <LinearLayout
+        android:id="@+id/rm_activity_main01_linearLayout02"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:orientation="horizontal"/>
+
+</LinearLayout>
