@@ -29,7 +29,7 @@ public class MainActivity_Home_Adapter extends RecyclerView.Adapter<MainActivity
     @NonNull
     @Override
     public ViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
-        View view = LayoutInflater.from(parent.getContext()).inflate(R.layout.rm_activity_home_fragment_container, parent, false);
+        View view = LayoutInflater.from(parent.getContext()).inflate(R.layout.rm_activity_main_home_fragment_container, parent, false);
         return new ViewHolder(view);
     }
 
