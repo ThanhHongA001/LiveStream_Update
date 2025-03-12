@@ -50,32 +50,27 @@ public class MainActivity_Button extends AppCompatActivity {
         btnActivity_Star_Fragment01 = findViewById(R.id.Activity_Star_Fragment01);
         btnActivity_Star_Fragment02 = findViewById(R.id.Activity_Star_Fragment02);
 
+
         // Thiết lập sự kiện onClick cho các Button
         btnHomeFragment01.setOnClickListener(v -> openFragment(new MainActivity_Home_Fragment01()));
         btnHomeFragment02.setOnClickListener(v -> openFragment(new MainActivity_Home_Fragment02()));
         btnHomeFragment03.setOnClickListener(v -> openFragment(new MainActivity_Home_Fragment03()));
         btnHomeFragment04.setOnClickListener(v -> openFragment(new MainActivity_Home_Fragment04()));
-
-        btnListLiveStreamFragment01.setOnClickListener(v -> openFragment(new MainActivity_List_LiveStream_Fragment01()));
-        btnListLiveStreamFragment02.setOnClickListener(v -> openFragment(new MainActivity_List_LiveStream_Fragment02()));
-        btnListLiveStreamFragment03.setOnClickListener(v -> openFragment(new MainActivity_List_LiveStream_Fragment03()));
-
-        btnActivity_Star_Fragment02.setOnClickListener(v -> openFragment(new MainActivity_Star_Fragment01()));
-
-        // Sự kiện chuyển sang MainActivity_Home khi bấm Activity_Home_Fragment05
         btnHomeFragment05.setOnClickListener(v -> {
             Intent intent = new Intent(MainActivity_Button.this, MainActivity_Home.class);
             startActivity(intent);
         });
 
-        // Sự kiện chuyển sang Activity khác nếu cần (chưa có Fragment 05)
+        btnListLiveStreamFragment01.setOnClickListener(v -> openFragment(new MainActivity_List_LiveStream_Fragment01()));
+        btnListLiveStreamFragment02.setOnClickListener(v -> openFragment(new MainActivity_List_LiveStream_Fragment02()));
+        btnListLiveStreamFragment03.setOnClickListener(v -> openFragment(new MainActivity_List_LiveStream_Fragment03()));
         btnListLiveStreamFragment04.setOnClickListener(v -> {
             Intent intent = new Intent(MainActivity_Button.this, MainActivity_List_LiveStream.class);
             startActivity(intent);
         });
 
-        // Sự kiện chuyển sang màn MainActivity_Star khi bấm Activity_Star_Fragment01
-        btnActivity_Star_Fragment01.setOnClickListener(v -> {
+        btnActivity_Star_Fragment01.setOnClickListener(v -> openFragment(new MainActivity_Star_Fragment01()));
+        btnActivity_Star_Fragment02.setOnClickListener(v -> {
             Intent intent = new Intent(MainActivity_Button.this, MainActivity_Star.class);
             startActivity(intent);
         });

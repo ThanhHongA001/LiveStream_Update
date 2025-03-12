@@ -2,7 +2,7 @@
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/rrm_activity_main_list_live_stream_fragment01_fl_01"
+    android:id="@+id/rm_activity_main_list_live_stream_fragment01_fl_01"
     android:layout_width="match_parent"
     android:layout_height="wrap_content">
 

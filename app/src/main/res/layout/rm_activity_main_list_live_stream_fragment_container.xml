@@ -1,0 +1,24 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <!-- FrameLayout cho Fragment 01 -->
+    <FrameLayout
+        android:id="@+id/rm_activity_main_list_live_stream_fragment01_fl_01"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <!-- FrameLayout cho Fragment 02 -->
+    <FrameLayout
+        android:id="@+id/rm_activity_main_list_live_stream_fragment02_fl_01"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <!-- FrameLayout cho Fragment 03 -->
+    <FrameLayout
+        android:id="@+id/rm_activity_main_list_live_stream_fragment03_fl_01"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+</LinearLayout>

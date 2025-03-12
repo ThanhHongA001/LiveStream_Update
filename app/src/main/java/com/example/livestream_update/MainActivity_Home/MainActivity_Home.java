@@ -25,7 +25,7 @@ public class MainActivity_Home extends AppCompatActivity {
         RecyclerView recyclerView = findViewById(R.id.rm_activity_main_home_recyclerview);
 
         // Danh sách các Fragment cần hiển thị
-        List<Fragment> fragments = Arrays.asList(
+        List<Fragment> fragments_home = Arrays.asList(
                 new MainActivity_Home_Fragment01(),
                 new MainActivity_Home_Fragment02(),
                 new MainActivity_Home_Fragment03(),
@@ -33,7 +33,7 @@ public class MainActivity_Home extends AppCompatActivity {
         );
 
         // Thiết lập Adapter cho RecyclerView
-        MainActivity_Home_Adapter adapter = new MainActivity_Home_Adapter(this, fragments);
+        MainActivity_Home_Adapter adapter = new MainActivity_Home_Adapter(this, fragments_home);
         recyclerView.setLayoutManager(new LinearLayoutManager(this, LinearLayoutManager.VERTICAL, false));
         recyclerView.setAdapter(adapter);
     }
