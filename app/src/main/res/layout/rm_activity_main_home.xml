@@ -7,7 +7,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".ActivityMain_Home.MainActivity_Home">
+    tools:context=".MainActivity_Home.MainActivity_Home">
 
     <!-- Toolbar -->
     <androidx.constraintlayout.widget.ConstraintLayout

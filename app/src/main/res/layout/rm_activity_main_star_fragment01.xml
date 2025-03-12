@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/rm_activity_main_star_recharge_framelayout_01"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white_transparent"
+    tools:context=".MainActivity_Star.MainActivity_Star_Fragment01">
+
+    <LinearLayout
+        android:id="@+id/rm_activity_main_star_recharge_linear_01"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/rm_activity_main_star_recharge_constraint_01"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="10dp">
+
+            <TextView
+                android:id="@+id/rm_activity_main_star_recharge_textview_01"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="Recharge stars"
+                android:textColor="@color/white"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <ImageView
+                android:id="@+id/rm_activity_main_star_recharge_imageview_01"
+                android:layout_width="36dp"
+                android:layout_height="36dp"
+                android:background="@drawable/rm_ic_close_video_mini"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <LinearLayout
+            android:id="@+id/rm_activity_main_star_recharge_linear_02"
+            android:layout_width="match_parent"
+            android:layout_height="90dp"
+            android:gravity="center"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="10dp">
+
+            <!-- Gói 1 -->
+            <LinearLayout
+                android:id="@+id/rm_activity_main_star_recharge_linear_03"
+                android:layout_width="110dp"
+                android:layout_height="match_parent"
+                android:background="@drawable/rm_bg_button_star_fragment01"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:id="@+id/rm_activity_main_star_recharge_linear_04"
+                    android:layout_weight="9"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center">
+
+                    <ImageView
+                        android:id="@+id/rm_activity_main_star_recharge_imageview_02"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:padding="5dp"
+                        android:background="@drawable/rm_ic_star_coin"/>
+
+                    <TextView
+                        android:id="@+id/rm_activity_main_star_recharge_textview_02"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:text="30"
+                        android:textSize="20sp"
+                        android:textColor="@color/white"/>
+                </LinearLayout>
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/rm_activity_main_star_recharge_button_01"
+                    android:layout_width="match_parent"
+                    android:layout_height="35dp"
+                    android:background="@color/rm_bg_backgroup_packs"
+                    android:text="16$"/>
+
+            </LinearLayout>
+
+            <!-- Gói 2 -->
+            <LinearLayout
+                android:id="@+id/rm_activity_main_star_recharge_linear_05"
+                android:layout_width="110dp"
+                android:layout_height="match_parent"
+                android:background="@drawable/rm_bg_button_star_fragment01"
+                android:gravity="center"
+                android:layout_marginLeft="10dp"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:id="@+id/rm_activity_main_star_recharge_linear_06"
+                    android:layout_weight="9"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center">
+
+                    <ImageView
+                        android:id="@+id/rm_activity_main_star_recharge_imageview_03"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:padding="5dp"
+                        android:background="@drawable/rm_ic_star_coin"/>
+
+                    <TextView
+                        android:id="@+id/rm_activity_main_star_recharge_textview_03"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:text="30"
+                        android:textSize="20sp"
+                        android:textColor="@color/white"/>
+                </LinearLayout>
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/rm_activity_main_star_recharge_button_02"
+                    android:layout_width="match_parent"
+                    android:layout_height="35dp"
+                    android:background="@color/rm_bg_backgroup_packs"
+                    android:text="16$"/>
+
+            </LinearLayout>
+
+            <!-- Gói 3 -->
+            <LinearLayout
+                android:id="@+id/rm_activity_main_star_recharge_linear_07"
+                android:layout_width="110dp"
+                android:layout_height="match_parent"
+                android:background="@drawable/rm_bg_button_star_fragment01"
+                android:gravity="center"
+                android:layout_marginLeft="10dp"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:id="@+id/rm_activity_main_star_recharge_linear_08"
+                    android:layout_weight="9"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center">
+
+                    <ImageView
+                        android:id="@+id/rm_activity_main_star_recharge_imageview_04"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:padding="5dp"
+                        android:background="@drawable/rm_ic_star_coin"/>
+
+                    <TextView
+                        android:id="@+id/rm_activity_main_star_recharge_textview_04"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:text="30"
+                        android:textSize="20sp"
+                        android:textColor="@color/white"/>
+                </LinearLayout>
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/rm_activity_main_star_recharge_button_03"
+                    android:layout_width="match_parent"
+                    android:layout_height="35dp"
+                    android:background="@color/rm_bg_backgroup_packs"
+                    android:text="16$"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/rm_activity_main_star_recharge_textview_05"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:text="By placing this order, you agree to Kakoak’s Stars Terms and Payment Terms. | Learn more about stars."
+            android:textSize="13sp"
+            android:textColor="@color/rm_bg_backgroup_home"
+            android:gravity="center"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="10dp"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"/>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/rm_activity_main_star_recharge_button_04"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:text="Top Up"
+            android:textSize="18dp"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:layout_gravity="bottom"
+            android:background="@drawable/rm_bg_button_topup"
+            android:layout_margin="15dp"/>
+
+    </LinearLayout>
+
+</FrameLayout>

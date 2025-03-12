@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools">
+    xmlns:tools="http://schemas.android.com/tools" >
 
     <application
         android:allowBackup="true"
@@ -11,16 +11,19 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.LiveStream_Update"
-        tools:targetApi="31">
+        tools:targetApi="31" >
         <activity
-            android:name=".ActivityMain_List_LiveStream.ActivityMain_List_LiveStream"
+            android:name=".MainActivity_Star.MainActivity_Star"
             android:exported="false" />
         <activity
-            android:name=".ActivityMain_Home.MainActivity_Home"
+            android:name=".MainActivity_List_LiveStream.MainActivity_List_LiveStream"
+            android:exported="false" />
+        <activity
+            android:name=".MainActivity_Home.MainActivity_Home"
             android:exported="false" />
         <activity
             android:name=".MainActivity_Button"
-            android:exported="true">
+            android:exported="true" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

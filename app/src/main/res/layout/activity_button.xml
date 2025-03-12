@@ -120,12 +120,116 @@
                 android:text="04"
                 android:textSize="18sp"/>
 
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="10dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Activity_Star_Fragment01 đến 04"
+            android:textSize="15sp"
+            android:layout_marginBottom="5dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
             <androidx.appcompat.widget.AppCompatButton
-                android:id="@+id/Activity_List_LiveStream_Fragment05"
+                android:id="@+id/Activity_Star_Fragment01"
                 android:layout_weight="1"
                 android:layout_width="wrap_content"
                 android:layout_height="42dp"
-                android:text="05"
+                android:text="01"
+                android:textSize="18sp"/>
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/Activity_Star_Fragment02"
+                android:layout_weight="1"
+                android:layout_width="wrap_content"
+                android:layout_height="42dp"
+                android:text="02"
+                android:textSize="18sp"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="10dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Activity_Star_Fragment01 đến 04"
+            android:textSize="15sp"
+            android:layout_marginBottom="5dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <androidx.appcompat.widget.AppCompatButton
+
+                android:layout_weight="1"
+                android:layout_width="wrap_content"
+                android:layout_height="42dp"
+                android:text="01"
+                android:textSize="18sp"/>
+
+            <androidx.appcompat.widget.AppCompatButton
+
+                android:layout_weight="1"
+                android:layout_width="wrap_content"
+                android:layout_height="42dp"
+                android:text="02"
+                android:textSize="18sp"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="10dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Activity_Star_Fragment01 đến 04"
+            android:textSize="15sp"
+            android:layout_marginBottom="5dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <androidx.appcompat.widget.AppCompatButton
+
+                android:layout_weight="1"
+                android:layout_width="wrap_content"
+                android:layout_height="42dp"
+                android:text="01"
+                android:textSize="18sp"/>
+
+            <androidx.appcompat.widget.AppCompatButton
+
+                android:layout_weight="1"
+                android:layout_width="wrap_content"
+                android:layout_height="42dp"
+                android:text="02"
                 android:textSize="18sp"/>
 
         </LinearLayout>

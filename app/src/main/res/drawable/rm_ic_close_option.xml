@@ -1,0 +1,17 @@
+<!--
+  ~ Copyright (c) https://bigzun.blogspot.com/
+  ~ Email: bigzun.com@gmail.com
+  ~ Created by namnh40 on 2020/3/26
+  ~
+  -->
+
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="16dp"
+    android:height="16dp"
+    android:viewportWidth="16"
+    android:viewportHeight="16">
+  <path
+      android:pathData="M0,8C0,12.4184 3.5816,16 8,16C12.4184,16 16,12.4184 16,8C16,3.5816 12.4184,0 8,0C3.5816,0 0,3.5816 0,8ZM6.3035,5.1717L8,6.8688L9.6965,5.1717C10.009,4.8591 10.5158,4.859 10.8284,5.1716C11.141,5.4842 11.1409,5.991 10.8283,6.3035L9.1312,8L10.8283,9.6965C11.1409,10.009 11.141,10.5158 10.8284,10.8284C10.5158,11.141 10.009,11.1409 9.6965,10.8283L8,9.1312L6.3035,10.8283C5.991,11.1409 5.4842,11.141 5.1716,10.8284C4.859,10.5158 4.8591,10.009 5.1717,9.6965L6.8688,8L5.1717,6.3035C4.8591,5.991 4.859,5.4842 5.1716,5.1716C5.4842,4.859 5.991,4.8591 6.3035,5.1717Z"
+      android:fillColor="#5B5E71"
+      android:fillType="evenOdd"/>
+</vector>
