@@ -5,9 +5,5 @@
     android:background="@color/black_50"
     xmlns:tools="http://schemas.android.com/tools">
 
-    <androidx.recyclerview.widget.RecyclerView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        tools:listitem="@layout/rm_activity_item06"/>
 
 </LinearLayout>
