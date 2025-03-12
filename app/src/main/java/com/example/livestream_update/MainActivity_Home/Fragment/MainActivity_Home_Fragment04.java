@@ -48,15 +48,15 @@ public class MainActivity_Home_Fragment04 extends Fragment {
 
         // Tạo danh sách item
         itemList = new ArrayList<>();
-        itemList.add(new MainActivity_Home_Fragment04_Model(R.drawable.rm_error, "LiveStream 1", 100));
-        itemList.add(new MainActivity_Home_Fragment04_Model(R.drawable.rm_error, "LiveStream 2", 200));
-        itemList.add(new MainActivity_Home_Fragment04_Model(R.drawable.rm_error, "LiveStream 3", 300));
-        itemList.add(new MainActivity_Home_Fragment04_Model(R.drawable.rm_error, "LiveStream 1", 100));
-        itemList.add(new MainActivity_Home_Fragment04_Model(R.drawable.rm_error, "LiveStream 2", 200));
-        itemList.add(new MainActivity_Home_Fragment04_Model(R.drawable.rm_error, "LiveStream 3", 300));
-        itemList.add(new MainActivity_Home_Fragment04_Model(R.drawable.rm_error, "LiveStream 1", 100));
-        itemList.add(new MainActivity_Home_Fragment04_Model(R.drawable.rm_error, "LiveStream 2", 200));
-        itemList.add(new MainActivity_Home_Fragment04_Model(R.drawable.rm_error, "LiveStream 3", 300));
+        itemList.add(new MainActivity_Home_Fragment04_Model(R.drawable.rm_img_maskgroup_home, "LiveStream 1", 100));
+        itemList.add(new MainActivity_Home_Fragment04_Model(R.drawable.rm_img_maskgroup_home, "LiveStream 2", 200));
+        itemList.add(new MainActivity_Home_Fragment04_Model(R.drawable.rm_img_maskgroup_home, "LiveStream 3", 300));
+        itemList.add(new MainActivity_Home_Fragment04_Model(R.drawable.rm_img_maskgroup_home, "LiveStream 1", 100));
+        itemList.add(new MainActivity_Home_Fragment04_Model(R.drawable.rm_img_maskgroup_home, "LiveStream 2", 200));
+        itemList.add(new MainActivity_Home_Fragment04_Model(R.drawable.rm_img_maskgroup_home, "LiveStream 3", 300));
+        itemList.add(new MainActivity_Home_Fragment04_Model(R.drawable.rm_img_maskgroup_home, "LiveStream 1", 100));
+        itemList.add(new MainActivity_Home_Fragment04_Model(R.drawable.rm_img_maskgroup_home, "LiveStream 2", 200));
+        itemList.add(new MainActivity_Home_Fragment04_Model(R.drawable.rm_img_maskgroup_home, "LiveStream 3", 300));
 
         // Thiết lập adapter
         adapter = new MainActivity_Home_Fragment04_Adapter(itemList);

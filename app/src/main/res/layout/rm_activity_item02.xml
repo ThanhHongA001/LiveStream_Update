@@ -30,7 +30,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:scaleType="centerCrop"
-                android:src="@drawable/rm_error"/>
+                android:src="@drawable/rm_img_maskgroup_home"/>
         </androidx.cardview.widget.CardView>
 
         <TextView

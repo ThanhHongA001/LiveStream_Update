@@ -1,7 +1,7 @@
 <resources>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
-    <color name="black_50">#282727</color>
+    <color name="black_50">#141313</color>
     <color name="white_transparent">#00FFFFFF</color>
 
     <color name="colorBackground">#F5F5F5</color> <!-- Màu nền sáng -->

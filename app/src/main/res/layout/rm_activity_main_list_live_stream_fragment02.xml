@@ -25,10 +25,12 @@
                 android:layout_gravity="center"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Just For"
+                android:text="Video LiveStream"
                 android:layout_marginLeft="10dp"
+                android:background="@color/white_transparent"
                 android:textSize="18sp"
-                android:textStyle="bold" />
+                android:textStyle="bold"
+                android:textColor="@color/white"/>
 
             <androidx.appcompat.widget.AppCompatButton
                 android:id="@+id/rm_activity_main_list_live_stream_fragment02_btn_01"
@@ -43,6 +45,7 @@
             android:id="@+id/rm_activity_main_list_live_stream_fragment02_rv_01"
             android:layout_marginTop="10dp"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content" />
+            android:layout_height="wrap_content"
+            android:background="@color/white_transparent"/>
     </LinearLayout>
 </FrameLayout>

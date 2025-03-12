@@ -47,15 +47,15 @@ public class MainActivity_Home_Fragment02 extends Fragment {
 
         // Tạo danh sách dữ liệu mẫu
         itemList = new ArrayList<>();
-        itemList.add(new MainActivity_Home_Fragment02_Model("LiveStream 1", "1000 Views", R.drawable.rm_error));
-        itemList.add(new MainActivity_Home_Fragment02_Model("LiveStream 2", "1500 Views", R.drawable.rm_error));
-        itemList.add(new MainActivity_Home_Fragment02_Model("LiveStream 3", "2000 Views", R.drawable.rm_error));
-        itemList.add(new MainActivity_Home_Fragment02_Model("LiveStream 3", "2500 Views", R.drawable.rm_error));
-        itemList.add(new MainActivity_Home_Fragment02_Model("LiveStream 3", "3000 Views", R.drawable.rm_error));
-        itemList.add(new MainActivity_Home_Fragment02_Model("LiveStream 3", "3000 Views", R.drawable.rm_error));
-        itemList.add(new MainActivity_Home_Fragment02_Model("LiveStream 3", "2500 Views", R.drawable.rm_error));
-        itemList.add(new MainActivity_Home_Fragment02_Model("LiveStream 3", "3000 Views", R.drawable.rm_error));
-        itemList.add(new MainActivity_Home_Fragment02_Model("LiveStream 3", "3000 Views", R.drawable.rm_error));
+        itemList.add(new MainActivity_Home_Fragment02_Model("LiveStream 1", "1000 Views", R.drawable.rm_img_maskgroup_home));
+        itemList.add(new MainActivity_Home_Fragment02_Model("LiveStream 2", "1500 Views", R.drawable.rm_img_maskgroup_home));
+        itemList.add(new MainActivity_Home_Fragment02_Model("LiveStream 3", "2000 Views", R.drawable.rm_img_maskgroup_home));
+        itemList.add(new MainActivity_Home_Fragment02_Model("LiveStream 3", "2500 Views", R.drawable.rm_img_maskgroup_home));
+        itemList.add(new MainActivity_Home_Fragment02_Model("LiveStream 3", "3000 Views", R.drawable.rm_img_maskgroup_home));
+        itemList.add(new MainActivity_Home_Fragment02_Model("LiveStream 3", "3000 Views", R.drawable.rm_img_maskgroup_home));
+        itemList.add(new MainActivity_Home_Fragment02_Model("LiveStream 3", "2500 Views", R.drawable.rm_img_maskgroup_home));
+        itemList.add(new MainActivity_Home_Fragment02_Model("LiveStream 3", "3000 Views", R.drawable.rm_img_maskgroup_home));
+        itemList.add(new MainActivity_Home_Fragment02_Model("LiveStream 3", "3000 Views", R.drawable.rm_img_maskgroup_home));
 
         adapter = new MainActivity_Home_Fragment02_Adapter(itemList);
         recyclerView.setAdapter(adapter);

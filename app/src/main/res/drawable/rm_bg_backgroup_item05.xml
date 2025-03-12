@@ -9,6 +9,6 @@
 
     <!-- Đường viền -->
     <stroke
-        android:width="2dp"
-        android:color="@color/black"/>
+        android:width="3dp"
+        android:color="@color/rm_bg_backgroup_packs"/>
 </shape>
