@@ -16,6 +16,7 @@ import androidx.recyclerview.widget.RecyclerView;
 import com.example.livestream_update.MainActivity_Home.Fragment_Adapter.MainActivity_Home_Fragment02_Adapter;
 import com.example.livestream_update.MainActivity_Home.Fragment_Model.MainActivity_Home_Fragment02_Model;
 import com.example.livestream_update.MainActivity_Button;
+import com.example.livestream_update.MainActivity_List_LiveStream.MainActivity_List_LiveStream;
 import com.example.livestream_update.R;
 
 import java.util.ArrayList;
@@ -38,8 +39,9 @@ public class MainActivity_Home_Fragment02 extends Fragment {
 
         // Sự kiện click để chuyển sang MainActivity_Home
         btnSeeAll.setOnClickListener(v -> {
-            Intent intent = new Intent(getActivity(), MainActivity_Button.class);
+            Intent intent = new Intent(getActivity(), MainActivity_List_LiveStream.class);
             startActivity(intent);
+
         });
 
         recyclerView = view.findViewById(R.id.rm_fragment_activity_main_home_02_rv_01);

@@ -59,6 +59,7 @@ public class MainActivity_Button extends AppCompatActivity {
         btnHomeFragment05.setOnClickListener(v -> {
             Intent intent = new Intent(MainActivity_Button.this, MainActivity_Home.class);
             startActivity(intent);
+//            finish();
         });
 
         btnListLiveStreamFragment01.setOnClickListener(v -> openFragment(new MainActivity_List_LiveStream_Fragment01()));
@@ -67,12 +68,14 @@ public class MainActivity_Button extends AppCompatActivity {
         btnListLiveStreamFragment04.setOnClickListener(v -> {
             Intent intent = new Intent(MainActivity_Button.this, MainActivity_List_LiveStream.class);
             startActivity(intent);
+//            finish();
         });
 
         btnActivity_Star_Fragment01.setOnClickListener(v -> openFragment(new MainActivity_Star_Fragment01()));
         btnActivity_Star_Fragment02.setOnClickListener(v -> {
             Intent intent = new Intent(MainActivity_Button.this, MainActivity_Star.class);
             startActivity(intent);
+//            finish();
         });
 
     }

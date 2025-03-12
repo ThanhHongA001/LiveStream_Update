@@ -45,22 +45,6 @@
                 android:textStyle="bold"
                 android:textSize="18sp"/>
 
-            <androidx.constraintlayout.utils.widget.ImageFilterView
-                android:id="@+id/rm_activity_main_star_iv_05"
-                android:layout_width="35dp"
-                android:layout_height="35dp"
-                android:layout_marginLeft="10dp"
-                android:padding="5dp"
-                android:src="@drawable/rm_backgroup01_item01_channel"/>
-
-            <androidx.constraintlayout.utils.widget.ImageFilterView
-                android:id="@+id/rm_activity_main_star_iv_06"
-                android:layout_width="35dp"
-                android:layout_height="35dp"
-                android:layout_marginLeft="10dp"
-                android:padding="8dp"
-                android:src="@drawable/rm_ic_toolbar_search_new"/>
-
         </LinearLayout>
 
         <LinearLayout
