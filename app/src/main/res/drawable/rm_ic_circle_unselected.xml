@@ -1,0 +1,12 @@
+<!--
+  ~ Copyright (c) https://bigzun.blogspot.com/
+  ~ Email: bigzun.com@gmail.com
+  ~ Created by namnh40 on 2020/3/27
+  ~
+  -->
+
+<vector android:autoMirrored="true" android:height="16dp"
+    android:viewportHeight="16" android:viewportWidth="16"
+    android:width="16dp" xmlns:android="http://schemas.android.com/apk/res/android">
+    <path android:fillColor="#B8BAC2" android:fillType="evenOdd" android:pathData="M8,16C12.4183,16 16,12.4183 16,8C16,3.5817 12.4183,0 8,0C3.5817,0 0,3.5817 0,8C0,12.4183 3.5817,16 8,16ZM8,14.8571C4.2129,14.8571 1.1429,11.7871 1.1429,8C1.1429,4.2129 4.2129,1.1429 8,1.1429C11.7871,1.1429 14.8571,4.2129 14.8571,8C14.8571,11.7871 11.7871,14.8571 8,14.8571Z"/>
+</vector>

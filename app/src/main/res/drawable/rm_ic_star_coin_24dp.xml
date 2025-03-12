@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:drawable="@drawable/rm_ic_star_coin"
+        android:width="@dimen/dimen24dp"
+        android:height="@dimen/dimen24dp"
+        />
+
+</layer-list>

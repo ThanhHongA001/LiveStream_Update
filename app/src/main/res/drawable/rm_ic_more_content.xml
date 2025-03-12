@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?><!--
+  ~ Copyright (c) https://bigzun.blogspot.com/
+  ~ Email: bigzun.com@gmail.com
+  ~ Created by namnh40 on 2020/2/5
+  ~
+  -->
+
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:drawable="@drawable/rm_ic_more_press" android:state_pressed="true" />
+    <item android:drawable="@drawable/rm_ic_more_normal" android:state_selected="false" />
+    <item android:drawable="@drawable/rm_ic_more_press" android:state_selected="true" />
+    <item android:drawable="@drawable/rm_ic_more_normal" />
+</selector>

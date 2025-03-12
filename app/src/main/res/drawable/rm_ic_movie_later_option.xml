@@ -1,0 +1,17 @@
+<!--
+  ~ Copyright (c) https://bigzun.blogspot.com/
+  ~ Email: bigzun.com@gmail.com
+  ~ Created by namnh40 on 2020/3/26
+  ~
+  -->
+
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="16dp"
+    android:height="16dp"
+    android:viewportWidth="16"
+    android:viewportHeight="16">
+  <path
+      android:pathData="M0,8C0,3.6 3.6,0 8,0C12.4,0 16,3.6 16,8C16,12.4 12.4,16 8,16C3.6,16 0,12.4 0,8ZM7.2,8.8L11.36,11.36L12,10.32L8.4,8.16V4H7.2V8.8Z"
+      android:fillColor="#5B5E71"
+      android:fillType="evenOdd"/>
+</vector>
