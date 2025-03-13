@@ -19,11 +19,11 @@ import java.util.List;
 
 public class MainActivity_Home_Adapter extends RecyclerView.Adapter<MainActivity_Home_Adapter.ViewHolder> {
     private final FragmentActivity activity;
-    private final List<Fragment> fragmentList;
+    private final List<Fragment> fragmentList_home;
 
-    public MainActivity_Home_Adapter(FragmentActivity activity, List<Fragment> fragments) {
+    public MainActivity_Home_Adapter(FragmentActivity activity, List<Fragment> fragment_home) {
         this.activity = activity;
-        this.fragmentList = fragments;
+        this.fragmentList_home = fragment_home;
     }
 
     @NonNull

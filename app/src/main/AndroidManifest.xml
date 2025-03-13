@@ -12,19 +12,7 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.LiveStream_Update"
         tools:targetApi="31">
-        <activity
-            android:name=".MainActivty_All_LiveStream.MainActivity_All_LiveStream"
-            android:exported="false"
-            android:theme="@style/Theme.LiveStream_Update" />
-        <activity
-            android:name=".MainActivity_Star.MainActivity_Star"
-            android:exported="false" />
-        <activity
-            android:name=".MainActivity_List_LiveStream.MainActivity_List_LiveStream"
-            android:exported="false" />
-        <activity
-            android:name=".MainActivity_Home.MainActivity_Home"
-            android:exported="false" />
+
         <activity
             android:name=".MainActivity_Button"
             android:exported="true">
@@ -34,6 +22,29 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
+        <activity
+            android:name=".MainActivity_Home.MainActivity_Home"
+            android:exported="false" />
+
+        <activity
+            android:name=".MainActivity_Video_LiveStream.MainActivity_Video_LiveStream"
+            android:exported="false"
+            android:theme="@style/Theme.LiveStream_Update" />
+
+        <activity
+            android:name=".MainActivity_Star.MainActivity_Star"
+            android:exported="false" />
+
+        <activity
+            android:name=".MainActivity_List_LiveStream.MainActivity_List_LiveStream"
+            android:exported="false" />
+
+        <activity android:name=".MainActivity_All_Channel.MainActivity_All_Channel"
+                android:exported="false"/>
+
+
+
     </application>
 
 </manifest>

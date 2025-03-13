@@ -46,5 +46,6 @@ dependencies {
     androidTestImplementation(libs.ext.junit)
     androidTestImplementation(libs.espresso.core)
 
+    implementation ("androidx.coordinatorlayout:coordinatorlayout:1.2.0")
     implementation ("me.relex:circleindicator:2.1.6")
 }
