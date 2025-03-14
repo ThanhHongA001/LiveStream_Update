@@ -48,4 +48,7 @@ dependencies {
 
     implementation ("androidx.coordinatorlayout:coordinatorlayout:1.2.0")
     implementation ("me.relex:circleindicator:2.1.6")
+    implementation ("androidx.swiperefreshlayout:swiperefreshlayout:1.1.0")
+
+    implementation ("com.android.volley:volley:1.2.1")
 }

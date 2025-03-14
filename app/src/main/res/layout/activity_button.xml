@@ -61,7 +61,7 @@
                 android:textSize="18sp"/>
 
             <androidx.appcompat.widget.AppCompatButton
-                android:id="@+id/Activity_Home_Fragment05"
+                android:id="@+id/Activity_Home"
                 android:layout_weight="1"
                 android:layout_width="wrap_content"
                 android:layout_height="42dp"
@@ -114,7 +114,7 @@
                 android:textSize="18sp"/>
 
             <androidx.appcompat.widget.AppCompatButton
-                android:id="@+id/Activity_List_LiveStream_Fragment04"
+                android:id="@+id/Activity_List_LiveStream"
                 android:layout_weight="1"
                 android:layout_width="wrap_content"
                 android:layout_height="42dp"
@@ -152,7 +152,7 @@
                 android:textSize="18sp"/>
 
             <androidx.appcompat.widget.AppCompatButton
-                android:id="@+id/Activity_Star_Fragment02"
+                android:id="@+id/Activity_Star"
                 android:layout_weight="1"
                 android:layout_width="wrap_content"
                 android:layout_height="42dp"
@@ -181,7 +181,7 @@
             android:layout_height="wrap_content">
 
             <androidx.appcompat.widget.AppCompatButton
-                android:id="@+id/Activity_All_List_LiveStream_Fragment01"
+                android:id="@+id/Activity_All_List_LiveStream"
                 android:layout_weight="1"
                 android:layout_width="wrap_content"
                 android:layout_height="42dp"
@@ -199,7 +199,6 @@
         android:padding="10dp">
 
         <TextView
-            android:id="@+id/Activity_All_Channel"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Activity_All_Channel"
@@ -211,7 +210,7 @@
             android:layout_height="wrap_content">
 
             <androidx.appcompat.widget.AppCompatButton
-                android:id="@+id/Activity_All_Channel_button"
+                android:id="@+id/Activity_All_Channel"
                 android:layout_weight="1"
                 android:layout_width="wrap_content"
                 android:layout_height="42dp"
@@ -221,8 +220,7 @@
         </LinearLayout>
 
     </LinearLayout>
-
-    <!--    Activity-->
+    <!--    Activity_Channel_Deatel-->
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -232,7 +230,7 @@
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Activity"
+            android:text="Activity_Channel_Deatel"
             android:textSize="15sp"
             android:layout_marginBottom="5dp"/>
 
@@ -241,15 +239,33 @@
             android:layout_height="wrap_content">
 
             <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/Activity_Channel_Deatel_Fragment01"
                 android:layout_weight="1"
                 android:layout_width="wrap_content"
                 android:layout_height="42dp"
                 android:text="01"
                 android:textSize="18sp"/>
 
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/Activity_Channel_Deatel_Fragment02"
+                android:layout_weight="1"
+                android:layout_width="wrap_content"
+                android:layout_height="42dp"
+                android:text="02"
+                android:textSize="18sp"/>
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/Activity_Channel_Deatel"
+                android:layout_weight="1"
+                android:layout_width="wrap_content"
+                android:layout_height="42dp"
+                android:text="03"
+                android:textSize="18sp"/>
+
         </LinearLayout>
 
     </LinearLayout>
+
     <!--    Activity-->
     <LinearLayout
         android:layout_width="match_parent"

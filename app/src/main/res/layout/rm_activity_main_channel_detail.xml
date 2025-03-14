@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/rm_activity_main_channel_detail_cl_01"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LiveStream.MainActivity_Channel_Detail.MainActivity_Channel_Detail">
+
+    <ImageView
+        android:id="@+id/rm_activity_main_channel_detail_iv_01"
+        android:layout_width="match_parent"
+        android:layout_height="180dp"
+        android:background="@drawable/rm_img_maskgroup_home"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <LinearLayout
+        android:id="@+id/rm_activity_main_channel_detail_ll_01"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/rm_activity_main_channel_detail_ll_02"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp">
+
+            <androidx.constraintlayout.utils.widget.ImageFilterView
+                android:id="@+id/rm_activity_main_channel_detail_ifv_01"
+                android:layout_width="45dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:src="@drawable/rm_ic_arrow_back_dialog" />
+
+            <TextView
+                android:id="@+id/rm_activity_main_channel_detail_tv_01"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="List LiveStream"
+                android:textColor="@color/white"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <androidx.constraintlayout.utils.widget.ImageFilterView
+                android:id="@+id/rm_activity_main_channel_detail_ifv_02"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:layout_marginLeft="10dp"
+                android:padding="5dp"
+                android:src="@drawable/rm_backgroup01_item01_channel" />
+
+            <androidx.constraintlayout.utils.widget.ImageFilterView
+                android:id="@+id/rm_activity_main_channel_detail_ifv_03"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:layout_marginLeft="10dp"
+                android:padding="8dp"
+                android:src="@drawable/rm_ic_toolbar_search_new" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/rm_activity_main_channel_detail_ll_03"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/black_50"
+            android:layout_marginTop="60dp"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/rm_activity_main_channel_detail_ll_04"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white_transparent"
+                android:layout_marginTop="10dp">
+
+                <ImageView
+                    android:id="@+id/rm_activity_main_channel_detail_iv_02"
+                    android:layout_width="64dp"
+                    android:layout_height="64dp"
+                    android:background="@drawable/rm_bg_backgroup_item05"
+                    android:padding="5dp"
+                    android:src="@drawable/rm_ic_home_invite" />
+
+                <LinearLayout
+                    android:id="@+id/rm_activity_main_channel_detail_ll_05"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:orientation="vertical"
+                    android:gravity="center"
+                    android:layout_marginLeft="10dp"
+                    android:layout_weight="9">
+
+                    <TextView
+                        android:id="@+id/rm_activity_main_channel_detail_tv_02"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="KaKoak"
+                        android:textColor="@color/white"
+                        android:textSize="18sp"
+                        android:textStyle="bold" />
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:id="@+id/rm_activity_main_channel_detail_cl_02"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:id="@+id/rm_activity_main_channel_detail_tv_03"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="8k Follower" />
+
+                        <TextView
+                            android:id="@+id/rm_activity_main_channel_detail_tv_04"
+                            android:layout_width="8dp"
+                            android:layout_height="8dp"
+                            android:background="@drawable/rm_bg_btn_notified_me"
+                            app:layout_constraintEnd_toStartOf="@+id/rm_activity_main_channel_detail_tv_05"
+                            app:layout_constraintStart_toEndOf="@+id/rm_activity_main_channel_detail_tv_03" />
+
+                        <TextView
+                            android:id="@+id/rm_activity_main_channel_detail_tv_05"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="8k Follower"
+                            android:layout_marginRight="25dp" />
+
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+
+                </LinearLayout>
+
+                <androidx.constraintlayout.utils.widget.ImageFilterButton
+                    android:id="@+id/rm_activity_main_channel_detail_ifb_01"
+                    android:layout_width="120dp"
+                    android:layout_height="45dp"
+                    android:layout_marginLeft="10dp"
+                    android:background="@drawable/rm_ic_button_follow"
+                    android:layout_gravity="center"/>
+            </LinearLayout>
+
+            <TableLayout
+                android:id="@+id/rm_activity_main_channel_detail_tl_01"
+                android:layout_marginTop="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="45dp" />
+
+            <androidx.viewpager2.widget.ViewPager2
+                android:id="@+id/rm_activity_main_channel_detail_vp2_01"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

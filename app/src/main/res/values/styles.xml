@@ -1,10 +1,610 @@
 <?xml version="1.0" encoding="utf-8"?>
-<resources>
+<resources xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
 
-    <style name="DialogAnimation">
+
+    <style name="DialogAnimation_bootom">
         <item name="android:windowEnterAnimation">@anim/slide_in_bottom</item>
         <item name="android:windowExitAnimation">@anim/slide_out_bottom</item>
+    </style>
 
+    <style name="V5_MainText">
+        <item name="android:textColor">@color/v5_text</item>
+    </style>
+
+
+    <style name="V5_Main_Title" parent="V5_MainText">
+        <item name="android:fontFamily">@font/rm_quicksand_700</item>
+        <item name="android:textSize">@dimen/v5_main_title_text_size</item>
+    </style>
+
+    <style name="V5_Sub_Title" parent="V5_MainText">
+        <item name="android:textSize">@dimen/v5_sub_title_text_size</item>
+    </style>
+
+    <style name="V5_Sub_Title_Medium" parent="V5_Sub_Title">
+        <item name="android:fontFamily">@font/rm_quicksand_500</item>
+    </style>
+
+    <style name="V5_Sub_Title_Semibold" parent="V5_Sub_Title">
+        <item name="android:fontFamily">@font/rm_quicksand_600</item>
+    </style>
+
+    <style name="V5_Sub_Title_Bold" parent="V5_Sub_Title">
+        <item name="android:fontFamily">@font/rm_quicksand_700</item>
+    </style>
+
+    <style name="V5_Body_Text" parent="V5_MainText">
+        <item name="android:textSize">@dimen/v5_body_text_size</item>
+    </style>
+
+    <style name="V5_Body_Text_Regular" parent="V5_Body_Text">
+        <item name="android:fontFamily">@font/rm_quicksand_400</item>
+    </style>
+
+    <style name="V5_Body_Text_Medium" parent="V5_Body_Text">
+        <item name="android:fontFamily">@font/rm_quicksand_500</item>
+    </style>
+
+    <style name="V5_Body_Text_Semibold" parent="V5_Body_Text">
+        <item name="android:fontFamily">@font/rm_quicksand_600</item>
+    </style>
+
+    <style name="V5_List_Tittle" parent="V5_Body_Text_Medium">
+        <item name="android:textSize">@dimen/v5_main_title_text_size</item>
+        <item name="android:textColor">@color/v5_list_tittle</item>
+        <item name="android:ellipsize">end</item>
+        <item name="android:maxLines">1</item>
+    </style>
+
+    <style name="V5_List_Sub_Tittle" parent="V5_Body_Text_Regular">
+        <item name="android:textSize">@dimen/v5_link_text_size</item>
+        <item name="android:textColor">@color/v5_text_2</item>
+        <item name="android:ellipsize">end</item>
+        <item name="android:maxLines">1</item>
+    </style>
+
+    <style name="V5_List_Description" parent="V5_Body_Text_Regular">
+        <item name="android:textSize">@dimen/v5_desc_text_size</item>
+        <item name="android:textColor">@color/v5_text_description</item>
+        <item name="android:ellipsize">end</item>
+        <item name="android:maxLines">1</item>
+    </style>
+
+    <style name="V5_OM_Time" parent="V5_Body_Text_Regular">
+        <item name="android:textColor">@color/v5_text_2</item>
+        <item name="android:textSize">@dimen/v5_link_text_size</item>
+    </style>
+
+    <style name="V5_Button" parent="V5_Body_Text_Medium">
+        <item name="android:layout_height">44dp</item>
+        <item name="android:layout_width">300dp</item>
+        <item name="android:gravity">center</item>
+        <item name="rv_cornerRadius">20dp</item>
+    </style>
+
+    <style name="V5_Button_Submit" parent="V5_Button">
+        <item name="android:textColor">@color/v5_text_7</item>
+        <item name="rv_backgroundColor">@color/v5_main_color</item>
+        <item name="rv_backgroundPressColor">@color/v5_main_color_press</item>
+    </style>
+
+
+    <style name="Avatar">
+        <item name="riv_border_width">@dimen/border_width_avatar_channel</item>
+        <item name="riv_border_color">@color/v5_border_edt_feedback</item>
+    </style>
+
+    <style name="Avatar_Normal" parent="Avatar">
+        <item name="android:layout_width">@dimen/v5_avatar_normal_size</item>
+        <item name="android:layout_height">@dimen/v5_avatar_normal_size</item>
+        <item name="android:scaleType">centerCrop</item>
+        <item name="riv_corner_radius">19dp</item>
+    </style>
+
+    <style name="Avatar_Small" parent="Avatar">
+        <item name="android:scaleType">fitXY</item>
+        <item name="android:layout_width">@dimen/v5_avatar_small_size</item>
+        <item name="android:layout_height">@dimen/v5_avatar_small_size</item>
+        <item name="riv_corner_radius">30dp</item>
+    </style>
+
+    <!--style for new UI Setting-->
+
+    <style name="V5TextSubTitleListHistory" parent="V5_Sub_Title_Semibold">
+        <item name="android:textSize">@dimen/v5_sub_title_text_size</item>
+        <item name="android:textColor">@color/v5_text</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:maxLines">1</item>
+        <item name="android:ellipsize">end</item>
+    </style>
+
+    <style name="V5TextSubTitleHistory" parent="V5_Sub_Title_Medium">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">@dimen/v5_body_text_size</item>
+        <item name="android:textColor">@color/v5_main_color</item>
+        <item name="android:maxLines">1</item>
+        <item name="android:ellipsize">end</item>
+    </style>
+
+
+    <style name="DialogSetting" parent="Theme.AppCompat.Light.Dialog">
+        <item name="android:windowBackground">@color/transparent</item>
+        <!--        <item name="android:windowAnimationStyle">@style/V5DialogWindowAnimation</item>-->
+    </style>
+
+    <style name="ButtonDialogStyle" parent="Widget.AppCompat.Button.Borderless">
+        <item name="android:clickable">true</item>
+        <item name="android:background">?attr/selectableItemBackground</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:textSize">@dimen/v5_main_title_text_size</item>
+        <item name="android:textAppearance">@style/V5_MainText</item>
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:paddingTop">15dp</item>
+        <item name="android:paddingBottom">15dp</item>
+        <item name="android:textAlignment">center</item>
+    </style>
+
+    <style name="ButtonDialogStyleSemiBold" parent="Widget.AppCompat.Button.Borderless">
+        <item name="android:clickable">true</item>
+        <item name="android:background">@color/transparent</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:textSize">@dimen/v5_main_title_text_size</item>
+        <item name="android:textColor">@color/v5_main_color</item>
+        <item name="android:textAppearance">@style/V5_Body_Text_Semibold</item>
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:paddingTop">@dimen/padding_10</item>
+        <item name="android:paddingBottom">@dimen/padding_10</item>
+        <item name="android:textAlignment">center</item>
+    </style>
+
+    <style name="ButtonDialogStyleRegular" parent="Widget.AppCompat.Button.Borderless">
+        <item name="android:clickable">true</item>
+        <item name="android:background">@color/transparent</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:textSize">@dimen/v5_main_title_text_size</item>
+        <item name="android:textColor">@color/v5_text</item>
+        <item name="android:textAppearance">@style/V5_Body_Text_Regular</item>
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:paddingTop">@dimen/padding_10</item>
+        <item name="android:paddingBottom">@dimen/padding_10</item>
+        <item name="android:textAlignment">center</item>
+    </style>
+
+    <style name="TitleDialogStyleSemiBold" parent="V5_Sub_Title_Semibold">
+        <item name="android:textSize">@dimen/v5_main_title_text_size</item>
+        <item name="android:maxLines">2</item>
+        <item name="android:ellipsize">end</item>
+        <item name="android:gravity">center_horizontal</item>
+        <item name="android:paddingStart">@dimen/dimen15dp</item>
+        <item name="android:paddingEnd">@dimen/dimen15dp</item>
+    </style>
+
+    <style name="V5TextTitleDialog" parent="V5_Main_Title">
+        <item name="android:ellipsize">none</item>
+        <item name="android:maxLines">3</item>
+        <item name="android:textAlignment">center</item>
+        <item name="android:textColor">#181818</item>
+        <item name="fontFamily">@font/rm_quicksand_600</item>
+        <item name="android:layout_marginRight">@dimen/dimen16dp</item>
+        <item name="android:layout_marginLeft">@dimen/dimen16dp</item>
+        <item name="android:layout_marginTop">@dimen/v5_title_dialog_margin_vertical</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:singleLine">false</item>
+        <item name="android:maxWidth">@dimen/v5_max_width_title_dialog</item>
+    </style>
+
+    <style name="V5TextMessageDialog" parent="V5_Body_Text_Regular">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textAlignment">center</item>
+        <item name="android:singleLine">false</item>
+        <item name="android:textColor">@color/v5_text_2</item>
+        <item name="android:layout_marginBottom">18dp</item>
+        <item name="android:lineSpacingExtra">@dimen/dimen3dp</item>
+        <item name="android:layout_marginLeft">@dimen/v5_layout_padding</item>
+        <item name="android:layout_marginRight">@dimen/v5_layout_padding</item>
+    </style>
+
+    <style name="V5DialogRadioButton" parent="DialogSetting"></style>
+
+    <style name="text_duration" parent="V5_Sub_Title_Medium">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_alignParentEnd">true</item>
+        <item name="android:layout_alignParentBottom">true</item>
+        <item name="android:layout_marginEnd">@dimen/v5_margin_normal</item>
+        <item name="android:layout_marginBottom">@dimen/v5_margin_normal</item>
+        <item name="android:background">@drawable/rm_bg_duration_video</item>
+        <item name="android:paddingStart">7.5dp</item>
+        <item name="android:paddingEnd">7.5dp</item>
+        <item name="android:paddingTop">2.5dp</item>
+        <item name="android:paddingBottom">2.5dp</item>
+        <item name="android:includeFontPadding">false</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:maxLines">1</item>
+        <item name="android:ellipsize">end</item>
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:textSize">@dimen/v5_desc_text_size</item>
+        <item name="android:gravity">center</item>
+        <item name="android:visibility">gone</item>
+    </style>
+
+    <style name="title_item_video" parent="V5_Sub_Title_Semibold">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:maxLines">2</item>
+        <item name="android:ellipsize">end</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:layout_marginTop">@dimen/v5_title_item_margin_top</item>
+        <item name="android:layout_marginEnd">@dimen/v5_title_item_margin_end</item>
+    </style>
+
+    <style name="title_item_large_video" parent="title_item_video">
+        <item name="android:layout_marginTop">@dimen/v5_title_large_item_margin_top</item>
+        <item name="android:textSize">@dimen/dimen_text16sp</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:layout_marginEnd">@dimen/v5_title_large_item_margin_end</item>
+    </style>
+
+    <style name="total_view_item_video" parent="V5_Body_Text_Regular">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:maxLines">1</item>
+        <item name="android:ellipsize">end</item>
+        <item name="android:layout_marginTop">1dp</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:textSize">@dimen/dimen_text14sp</item>
+        <item name="android:drawablePadding">@dimen/v5_drawable_padding</item>
+    </style>
+
+    <style name="datetime_item_video" parent="V5_Body_Text_Regular">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:maxLines">1</item>
+        <item name="android:ellipsize">end</item>
+        <item name="android:layout_marginTop">1dp</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:textSize">@dimen/dimen_text14sp</item>
+        <item name="android:drawablePadding">@dimen/v5_drawable_padding</item>
+    </style>
+
+    <style name="title_music_option" parent="V5_Body_Text_Regular">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:maxLines">1</item>
+        <item name="android:ellipsize">end</item>
+        <item name="android:layout_marginStart">@dimen/dimen10dp</item>
+        <item name="android:textSize">@dimen/v5_main_title_text_size</item>
+        <item name="android:textColor">@color/v5_text</item>
+    </style>
+
+
+    <style name="button_option_normal_item">
+        <item name="android:layout_width">36dp</item>
+        <item name="android:layout_height">48dp</item>
+        <item name="android:paddingStart">15dp</item>
+        <item name="android:paddingEnd">0dp</item>
+        <item name="android:paddingTop">11dp</item>
+        <item name="android:paddingBottom">14dp</item>
+        <item name="srcCompat">@drawable/rm_ic_more_content</item>
+        <item name="android:clickable">true</item>
+        <item name="android:layout_marginEnd">5dp</item>
+        <item name="android:layout_alignParentEnd">true</item>
+        <item name="android:layout_gravity">right</item>
+    </style>
+
+
+    <style name="style_bottom_sheet_dialog_v2" parent="Theme.Design.Light.BottomSheetDialog">
+        <item name="bottomSheetStyle">@style/ModalStyle</item>
+    </style>
+
+    <style name="button_action_bar">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:background">?attr/selectableItemBackgroundBorderless</item>
+        <item name="android:clickable">true</item>
+        <item name="android:scaleType">centerInside</item>
+        <item name="android:layout_centerVertical">true</item>
+        <item name="android:layout_gravity">center_vertical</item>
+        <item name="android:minHeight">30dp</item>
+        <item name="android:contentDescription">@null</item>
+    </style>
+
+    <style name="button_back_action_bar" parent="button_action_bar">
+        <item name="srcCompat">@drawable/rm_ic_v5_back</item>
+        <item name="android:paddingStart">8dp</item>
+        <item name="android:paddingEnd">8dp</item>
+        <item name="android:layout_marginStart">7dp</item>
+        <item name="android:layout_marginEnd">7dp</item>
+    </style>
+
+    <style name="button_fixed_action_bar" parent="button_action_bar">
+        <item name="srcCompat">@drawable/rm_ic_v5_back</item>
+        <item name="android:paddingStart">8dp</item>
+        <item name="android:paddingEnd">8dp</item>
+        <item name="android:layout_marginStart">7dp</item>
+        <item name="android:layout_marginEnd">7dp</item>
+        <item name="android:visibility">invisible</item>
+        <item name="android:layout_alignParentEnd">true</item>
+    </style>
+
+
+    <style name="V5_TabLayout_TextAppearance" parent="TextAppearance.Design.Tab">
+        <item name="textAllCaps">false</item>
+        <item name="android:textSize">@dimen/v5_body_text_size</item>
+        <item name="android:fontFamily">@font/rm_quicksand_500</item>
+    </style>
+
+    <style name="layout_title_large_item">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:paddingStart">10dp</item>
+        <item name="android:paddingEnd">@dimen/v5_spacing_normal</item>
+        <item name="android:paddingTop">10dp</item>
+        <item name="android:paddingBottom">5dp</item>
+    </style>
+
+    <style name="text_approved" parent="V5_Sub_Title_Medium">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">@dimen/v5_link_text_size</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:layout_marginEnd">@dimen/v5_spacing_normal</item>
+        <item name="android:layout_marginTop">@dimen/dimen8dp</item>
+        <item name="android:layout_marginStart">@dimen/dimen8dp</item>
+        <item name="android:minHeight">@dimen/dimen25dp</item>
+        <item name="android:minWidth">@dimen/dimen70dp</item>
+    </style>
+
+
+    <style name="title_action_bar" parent="V5_Main_Title">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_centerVertical">true</item>
+        <item name="android:gravity">center</item>
+        <item name="android:lines">1</item>
+        <item name="android:text">@string/app_name</item>
+        <item name="android:ellipsize">marquee</item>
+    </style>
+
+
+    <!--    <style name="DialogFullscreenNoStatusBar" parent="@style/Theme.AppCompat.Light.Dialog" >-->
+    <!--        <item name="android:windowBackground">@null</item>-->
+    <!--        <item name="android:windowNoTitle">true</item>-->
+    <!--        <item name="android:windowFrame">@null</item>-->
+    <!--        <item name="android:windowIsFloating">true</item>-->
+    <!--        <item name="android:windowContentOverlay">@null</item>-->
+    <!--        <item name="android:windowAnimationStyle">@android:style/Animation.Dialog</item>-->
+    <!--        <item name="android:windowSoftInputMode">stateUnspecified|adjustPan</item>-->
+    <!--    </style>-->
+
+    <style name="DialogAnimation">
+        <item name="android:windowEnterAnimation">@anim/rm_livestream_slide_in_bottom</item>
+        <item name="android:windowExitAnimation">@anim/rm_livestream_slide_out_bottom</item>
+    </style>
+
+
+    <style name="BitelBottomSheetStyle">
+        <item name="android:windowIsFloating">false</item>
+        <item name="android:windowBackground">#B2000000</item>
+        <item name="android:windowMinWidthMajor">100%</item>
+        <item name="android:windowMinWidthMinor">100%</item>
+        <item name="android:windowAnimationStyle">@style/Animation.Design.BottomSheetDialog</item>
+        <item name="android:windowCloseOnTouchOutside">true</item>
+        <item name="windowActionModeOverlay">true</item>
+    </style>
+
+    <style name="ClickableView">
+        <item name="colorControlHighlight">@android:color/darker_gray</item>
+        <item name="android:background">?selectableItemBackgroundBorderless</item>
+    </style>
+
+    <style name="tab_text_livestream" parent="@android:style/TextAppearance.Widget.TabWidget">
+        <item name="android:fontFamily">@font/rm_quicksand_400</item>
+        <item name="android:textAllCaps">false</item>
+    </style>
+
+
+    <!-- Base application theme. -->
+
+    <style name="tab_text_movie" parent="V5_Body_Text_Medium">
+        <item name="android:textSize">14sp</item>
+    </style>
+
+
+    <style name="BottomSheetLiveStreamDialogTheme" parent="Theme.Design.Light.BottomSheetDialog">
+        <item name="bottomSheetStyle">@style/LiveStreamModalStyle</item>
+    </style>
+
+    <style name="LiveStreamModalStyle" parent="Widget.Design.BottomSheet.Modal">
+        <item name="android:background">@drawable/rm_bg_bottom_sheet_live_stream</item>
+    </style>
+
+
+    <style name="Theme.OverlayToolBar.NoActionBar" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="windowActionModeOverlay">true</item>
+        <item name="android:forceDarkAllowed" tools:targetApi="q">false</item>
+    </style>
+
+    <!--<style name="NoActionBar" parent="Theme.AppCompat.Light.DarkActionBar">-->
+
+    <style name="Theme.OverlayToolBar.NoActionBar.NoAnimation" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="windowActionModeOverlay">true</item>
+        <item name="android:windowAnimationStyle">@null</item>
+    </style>
+
+    <style name="DialogFullscreen" parent="@style/Theme.AppCompat.DayNight.Dialog">
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowFullscreen">false</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowBackground">@color/transparent</item>
+    </style>
+
+
+    <!-- Animations -->
+
+    <style name="Button_Yes" parent="V5_Body_Text_Regular">
+        <item name="android:maxLines">1</item>
+        <item name="android:ellipsize">end</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">@dimen/kakoak_text_size_level_3</item>
+        <item name="android:background">@drawable/rm_selector_rec_purple</item>
+        <item name="android:textAllCaps" tools:ignore="NewApi">false</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:paddingLeft">@dimen/padding_text_in_button</item>
+        <item name="android:paddingRight">@dimen/padding_text_in_button</item>
+        <item name="android:layout_gravity">center</item>
+    </style>
+
+
+    <style name="Button_Material_Dialog" parent="ButtonDialogStyle">
+        <item name="android:maxLines">1</item>
+        <item name="android:ellipsize">end</item>
+        <item name="android:textColor">@color/bg_kakoak</item>
+        <item name="android:textAllCaps" tools:ignore="NewApi">true</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:minHeight">0dp</item>
+        <item name="android:minWidth">0dp</item>
+        <item name="android:fontFamily">@font/rm_quicksand_600</item>
+        <item name="android:paddingBottom">@dimen/margin_more_content_5</item>
+        <item name="android:paddingTop">@dimen/margin_more_content_5</item>
+        <item name="android:paddingLeft">@dimen/margin_more_content_10</item>
+        <item name="android:paddingRight">@dimen/margin_more_content_10</item>
+        <item name="android:layout_gravity">center</item>
+    </style>
+
+    <!-- Defines the custom XML attributes supported for a HorizontalListView -->
+    <declare-styleable name="HorizontalListView">
+        <attr name="dividerWidth" format="dimension" />
+        <attr name="android:divider" />
+        <attr name="android:requiresFadingEdge" />
+        <attr name="android:fadingEdgeLength" />
+    </declare-styleable>
+
+    <!--New theme material-->
+
+
+    <!--New-->
+
+    <style name="TextAbTitle">
+        <item name="android:textColor">@color/text_ab_title</item>
+        <item name="android:textSize">17sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:maxLines">1</item>
+        <item name="android:ellipsize">end</item>
+    </style>
+
+
+    <style name="TextOnmediaLikeShare" parent="V5_Body_Text_Regular">
+        <item name="android:textColor">#454545</item>
+        <item name="android:maxWidth">80dp</item>
+        <item name="android:maxLines">1</item>
+        <item name="android:minWidth">@dimen/margin_more_content_20</item>
+        <item name="android:gravity">left|center_vertical</item>
+        <item name="android:textSize">@dimen/kakoak_text_size_level_2_in_dp</item>
+        <item name="android:ellipsize">end</item>
+    </style>
+
+    <style name="IconBack">
+        <!--        <item name="android:src">@drawable/ic_ab_back</item>-->
+        <!--        <item name="android:tint">@color/bg_ab_icon</item>-->
+        <!--        <item name="android:background">?android:attr/selectableItemBackground</item>-->
+        <!--        <item name="android:paddingLeft">@dimen/margin_more_content_5</item>-->
+        <!--        <item name="android:paddingRight">@dimen/margin_more_content_7</item>-->
+        <item name="android:layout_width">54dp</item>
+        <item name="android:layout_height">54dp</item>
+        <item name="android:background">?android:attr/selectableItemBackground</item>
+        <item name="srcCompat">@drawable/rm_ic_v5_back</item>
+        <item name="android:paddingStart">15dp</item>
+        <item name="android:paddingEnd">15dp</item>
+        <item name="android:scaleType">centerInside</item>
+        <item name="android:layout_centerVertical">true</item>
+        <item name="android:layout_gravity">center_vertical</item>
+    </style>
+
+
+    <style name="ProgressLoading">
+        <item name="matProg_barColor">@color/bg_kakoak</item>
+        <item name="matProg_progressIndeterminate">true</item>
+    </style>
+
+    <declare-styleable name="CircularImageView">
+        <attr name="civ_border" format="boolean" />
+        <attr name="civ_border_width" format="dimension" />
+        <attr name="civ_border_color" format="color" />
+        <attr name="civ_shadow" format="boolean" />
+        <attr name="civ_shadow_color" format="color" />
+        <attr name="civ_shadow_radius" format="float" />
+    </declare-styleable>
+
+    <style name="ModalStyle" parent="Widget.Design.BottomSheet.Modal">
+        <item name="android:background">@drawable/rm_rounded_layout_bottom_sheet</item>
+    </style>
+
+    <style name="Logo_player">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">@dimen/height_logo_player</item>
+        <item name="android:visibility">gone</item>
+        <item name="android:contentDescription">@null</item>
+    </style>
+
+    <style name="Logo_player.Top">
+        <item name="android:layout_marginTop">@dimen/margin_top_logo_player</item>
+        <item name="android:layout_alignParentTop">true</item>
+    </style>
+
+    <style name="Logo_player.Bottom">
+        <item name="android:layout_marginBottom">@dimen/margin_bottom_logo_player</item>
+        <item name="android:layout_alignParentBottom">true</item>
+    </style>
+
+
+    <!--<style name="AppTheme.NoActionBar.FullScreen">
+        <item name="windowNoTitle">true</item>
+        <item name="windowActionBar">false</item>
+        <item name="android:windowFullscreen">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+    </style>-->
+
+    <style name="style_share_content_dialog" parent="Theme.Design.Light.BottomSheetDialog">
+        <item name="bottomSheetStyle">@style/ModalStyle</item>
+    </style>
+
+    <style name="TagGroup">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="atg_isAppendMode">false</item>
+        <item name="atg_inputHint">@string/add_tag</item>
+        <item name="atg_borderColor">#49C120</item>
+        <item name="atg_textColor">#49C120</item>
+        <item name="atg_backgroundColor">#FFFFFF</item>
+        <item name="atg_dashBorderColor">#AAAAAA</item>
+        <item name="atg_inputHintColor">#80000000</item>
+        <item name="atg_inputTextColor">#DE000000</item>
+        <item name="atg_checkedBorderColor">#49C120</item>
+        <item name="atg_checkedTextColor">#FFFFFF</item>
+        <item name="atg_checkedMarkerColor">#FFFFFF</item>
+        <item name="atg_checkedBackgroundColor">#49C120</item>
+        <item name="atg_pressedBackgroundColor">#EDEDED</item>
+        <item name="atg_borderStrokeWidth">0.5dp</item>
+        <item name="atg_textSize">13sp</item>
+        <item name="atg_horizontalSpacing">8dp</item>
+        <item name="atg_verticalSpacing">4dp</item>
+        <item name="atg_horizontalPadding">12dp</item>
+        <item name="atg_verticalPadding">3dp</item>
     </style>
 
 </resources>

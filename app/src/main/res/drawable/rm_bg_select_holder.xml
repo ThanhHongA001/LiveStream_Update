@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?><!--
+  ~ Copyright (c) https://bigzun.blogspot.com/
+  ~ Email: bigzun.com@gmail.com
+  ~ Created by namnh40 on 2019/8/27
+  ~
+  -->
+
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:drawable="@color/bg_kakoak_focus" android:state_pressed="true" />
+    <item android:drawable="@android:color/transparent" />
+
+</selector>

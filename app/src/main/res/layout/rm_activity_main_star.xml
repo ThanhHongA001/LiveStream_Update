@@ -8,7 +8,7 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:background="@color/black_50"
-    tools:context=".MainActivity_Star.MainActivity_Star">
+    tools:context=".LiveStream.MainActivity_Star.MainActivity_Star">
 
     <LinearLayout
         android:id="@+id/rm_activity_main_star_ln_main_01"
@@ -16,7 +16,7 @@
         android:layout_height="match_parent"
         android:orientation="vertical"
         android:background="@color/black_50"
-        tools:context=".MainActivity_Star.MainActivity_Star">
+        tools:context=".LiveStream.MainActivity_Star.MainActivity_Star">
 
         <LinearLayout
             android:id="@+id/rm_activity_main_star_layout_02"

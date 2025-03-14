@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="empty_retry_button" type="id"/>
+    <item name="empty_retry_text2" type="id"/>
+    <item name="empty_retry_text1" type="id"/>
+    <item name="btnUpload" type="id"/>
+    <item name="empty_text" type="id"/>
+    <item name="tvEmptyDes" type="id"/>
+    <item name="empty_layout" type="id"/>
+    <item name="icEmpty" type="id"/>
+    <item name="tvEmptyTitle" type="id"/>
+</resources>

@@ -12,4 +12,146 @@
     <color name="rm_bg_backgroup_home">#80DDDDDD</color>
     <color name="rm_bg_backgroup_Topup">#FF7021</color>
 
+    <color name="bg_trans">#77666666</color>
+
+    <color name="v5_text_30">#4D151A35</color>
+    <color name="v5_main_color">#23ca47</color>
+    <color name="v5_main_color_press">#8023ca47</color>
+    <color name="v5_list_tittle_color">#151936</color>
+    <color name="v5_cancel">#E7E8EA</color>
+    <color name="v5_pre_select">#F3F3F5</color>
+
+    <color name="v5_background_default">#ffffff</color>
+
+    <color name="v5_list_tittle">@color/v5_list_tittle_color</color>
+    <color name="v5_error">#FF3B30</color>
+
+    <color name="v5_text">#151A35</color>
+    <color name="v5_text_90">#E6151A35</color>
+
+    <color name="v5_text_description">#B8BAC2</color>
+
+    <color name="v5_text_2">#5B5E71</color>
+    <color name="v5_text_3">#B8BAC2</color>
+    <color name="v5_text_5">@color/v5_cancel</color>
+    <color name="v5_text_7">@color/white</color>
+
+    <color name="v5_color_button_ok_dialog">#23ca47</color>
+    <color name="v5_color_button_cancel_dialog">#151A35</color>
+    <color name="v5_bg_text_explain">#D7151A35</color>
+    <color name="v5_border_edt_feedback">#E7E8EA</color>
+
+    <color name="v5_fg_image_disable">#CDFFFFFF</color>
+
+    <color name="v5_pin_entry">@color/v5_text_5</color>
+
+    <color name="df_placeholder">#80E5E5E5</color>
+
+    <color name="v5_call_bg">#2c716e</color>
+
+
+    <color name="live_stream_color_title">#9f9f9f</color>
+    <color name="live_stream_color_content">#e5e5e5</color>
+    <color name="live_stream_color_second">#9d9d9d</color>
+    <color name="live_stream_color_trans">#802c2c2c</color>
+    <color name="live_stream_color_box_comment">#2c2c2c</color>
+
+
+    <color name="main_color_new">#2DB742</color>
+    <color name="text_color_directors">#8B8B8B</color>
+    <color name="text_color_remind">#323131</color>
+    <color name="text_color_view_and_time">#6C6C6C</color>
+    <color name="text_color_subscribe">#333333</color>
+    <color name="color_bg_main_game">#ECECEC</color>
+
+    <color name="color_top1">#F0A801</color>
+    <color name="color_top2">#007AFF</color>
+    <color name="color_top3">#FD5E01</color>
+
+
+    <!-- color for chat Bar-->
+    <!-- -->
+    <color name="gray">#B5B5B5</color>
+    <color name="text_black">#262626</color>
+    <color name="text_gray_light">#C6C6C6</color>
+    <color name="text_message_time">#979797</color>
+    <!-- background of browser action bar -->
+    <color name="bg_browser_black_transparent">#CB232323</color>
+
+    <!-- background of all screen-->
+    <color name="bg_toast">#CBC4EB</color>
+    <color name="bg_kakoak">#23ca47</color>
+    <color name="bg_kakoak_focus">#EEEEEE</color>
+    <color name="bg_contact_dis">#ECECEC</color>
+    <!---->
+    <color name="listview_divider">#E7E8EA</color>
+    <color name="avatar_default">#58A7D5</color>
+    <!--avatar-->
+    <color name="ava_color_3">#5061FD</color>
+
+    <color name="text_song_name">#4B4B4B</color>
+    <!--tab-->
+
+    <!--onmedia-->
+    <color name="onmedia_bg_button">#6A6A6A</color>
+    <color name="bg_onmedia_content_item">#DFE4EA</color>
+    <color name="bg_header_post_link_onmedia">#F6F6F6</color>
+
+    <!-- http://www.google.com/design/spec/style/color.html#color-ui-color-palette -->
+    <color name="material_blue_500">#5677FC</color>
+
+    <color name="colorAccent">#FFB20D</color>
+
+    <!--call-->
+
+    <color name="color_00">#8A000000</color>
+
+    <color name="bg_guest_book_item">#D2D9DA</color>
+
+    <color name="text_more_item">#454545</color>
+    <color name="text_menu_bottom">#5C5E6E</color>
+    <color name="text_ab_title">#5C5E6E</color>
+    <color name="text_ab_desc">#7D7D7D</color>
+
+    <!--    <color name="bg_search_box">#33000000</color>-->
+    <color name="bg_ab_icon">#868686</color>
+    <!--7F274A47-->
+
+    <color name="bg_color_unread_msg_thread">#959595</color>
+
+    <color name="golden_stars">#FFC619</color>
+
+    <color name="color_background_image">#e1e1e1</color>
+
+    <color name="videoColorSelect">#23ca47</color>
+    <color name="videoColorNormal">#6D6D6D</color>
+    <color name="videoColorAccent">@android:color/white</color>
+    <color name="videoColorTitle">@android:color/black</color>
+    <color name="videoColorTintButton">@color/videoColorTitle</color>
+    <color name="videoColorBackgroundVideoDetail">@color/videoColorTintButton</color>
+
+    <color name="videoColorTextNormal">#a3a3a3</color>
+
+    <!-- read news -->
+    <color name="black_effective">#2a2a2a</color>
+
+    <!-- search messages -->
+
+    <!--backup-->
+
+    <!--<color name="dot_stroke_color">#707272</color>-->
+    //#ececeb//6a6a6a/f1f2f6/ececec
+
+    <color name="new_green">#CBF2C1</color>
+    <color name="new_ui_green">#2DB742</color>
+    <color name="color_0C05">#0C0507</color>
+    <color name="color_6F6F">#6F6F6F</color>
+
+
+    <color name="colorWhite">#FFFFFF</color>
+
+    <color name="colorGrey">#a0a0a0</color>
+
+    <!--  MOSAN COLOR -->
+
 </resources>

@@ -3,8 +3,8 @@
 
     <item
         android:drawable="@drawable/rm_ic_star_coin"
-        android:width="24dp"
-        android:height="24dp"
+        android:width="@dimen/dimen24dp"
+        android:height="@dimen/dimen24dp"
         />
 
 </layer-list>

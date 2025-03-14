@@ -8,4 +8,322 @@
     <string name="next">Next</string>
     <string name="previous">Previous</string>
 
+    <string name="live_stream_list_tab_main_home_v2">Livestream ></string>
+
+    <string name="click_to_restart">Click to try again</string>
+    <string name="video_loading_failed">Video loading failed</string>
+
+    <string name="time_fast_ripple">" "seconds</string>
+    <string name="wait_for_approved">Pending</string>
+    <string name="no">No</string>
+    <string name="feed_time_minutes">minutes ago</string>
+    <string name="feed_time_minute">minute ago</string>
+    <string name="feed_time_hours">hours ago</string>
+    <string name="feed_time_hour">hour ago</string>
+    <string name="feed_time_day">days ago</string>
+    <string name="stranger_music_warning_create_when_already_join">You are listening to music with %1$s. Do you want to exit and listen with stranger?</string>
+    <string name="confirm">Confirm</string>
+    <string name="message_transfer_money">Airtime transfer</string>
+    <string name="send">Send</string>
+    <string name="today">Today</string>
+    <string name="e200_ok">e200_ok</string>
+    <string name="e405_user_invalid">The number is invalid</string>
+    <string name="e500_internal_server_error">Error occurred, please try again later.</string>
+    <string name="e550_password_over_limit">Request exceeds daily limit.</string>
+    <string name="e601_error_but_undefined">Error occurred, please try again later.</string>
+    <string name="error_unidentify">Unknown error</string>
+    <string name="error_internet_disconnect">No internet connection</string>
+    <string name="search">Search</string>
+    <string name="free_chat">Send free message</string>
+    <string name="offline_one_minute">Just now</string>
+    <string name="offline_minutes">%s minutes ago</string>
+    <string name="offline_minute">%s minute ago</string>
+    <string name="yesterday">Yesterday</string>
+    <string name="delete">Delete</string>
+    <string name="not_find">No results found</string>
+    <string name="add_contact">Add to Contacts</string>
+    <string name="ok">OK</string>
+    <string name="yes">Yes</string>
+    <string name="cancel">Cancel</string>
+    <string name="save">Save</string>
+    <string name="accept">Accept</string>
+    <string name="title_account_manager">Account settings</string>
+    <string name="action_done">Done</string>
+    <string name="msg_waiting">Processing&#8230;</string>
+    <string name="enter_message">Type message</string>
+    <string name="message_unread">New messages</string>
+    <string name="background_app_source">Background</string>
+    <string name="browser_title">Album</string>
+    <string name="done">Done</string>
+    <string name="login_locked">This function is blocked in</string>
+    <string name="prepare_photo_fail">Can not create file, please check device memory</string>
+    <string name="copy" translatable="false">Copy</string>
+    <string name="view_url">Go to</string>
+    <string name="send_mail">Send email</string>
+    <string name="file_not_found_exception">File not found</string>
+    <string name="loading">Loading</string>
+
+    <string name="text_avatar_default">Set profile\npicture</string>
+    <string name="sticker_download_done">Successfully downloaded</string>
+    <string name="file_size_in_mb">%.2f MB</string>
+    <string name="video_size_limit">Video size cannot exceed %d MB</string>
+    <string name="message_text">message</string>
+    <string name="message_image">photo</string>
+    <string name="message_voice_mail">voice message</string>
+    <string name="message_voice_sticker">voice sticker</string>
+    <string name="message_share_contact">business card</string>
+    <string name="message_share_video">video</string>
+    <string name="message_share_location">location</string>
+    <string name="retry">Retry</string>
+    <string name="onmedia_hint_enter_comment">Enter comment</string>
+    <string name="share">Share</string>
+    <string name="txt_check_setbackground">Apply to all</string>
+    <string name="message_event_follow_room">follow room</string>
+    <string name="join">Join</string>
+    <string name="upload_image_maximum">The number of photos uploaded to the maximum allowed %d photos</string>
+    <string name="saving_image">Saving image</string>
+
+    <string name="chat">Message</string>
+    <string name="onmedia_share_now">Share now</string>
+    <string name="onmedia_share_from_url">Share on timeline</string>
+    <string name="onmedia_time_just_now">Just now</string>
+    <string name="onmedia_follow">Follow</string>
+    <string name="onmedia_unfollow">Unfollow</string>
+    <string name="reply">Reply</string>
+    <string name="call">Call</string>
+    <string name="file_exist">File exist</string>
+    <string name="call_option_out">Call to mobile</string>
+    <string name="error_cache_background">Error occurred. Please try again.</string>
+    <string name="no_connectivity_check_again">No internet connection. Please check again.</string>
+
+    <string name="permission_activity_notfound">Your device does not support this function</string>
+    <string name="view_contact_detail">View details</string>
+
+    <string name="share_sieu_hai">Share on sieuhai.tv</string>
+    <string name="call_option_free">Call to Kakoak app</string>
+
+    <string name="app">Apps</string>
+    <string name="empty_no_data">Unable to load data</string>
+    <string name="empty_no_internet">Please check your internet connection and try again.</string>
+
+    <string name="video_views">%s views</string>
+
+    <string name="people_subscription">%s followers</string>
+    <string name="unsubscribeChannel_v2">SUBSCRIBED</string>
+    <string name="subscribeChannel_v2">SUBSCRIBE</string>
+    <string name="onmedia_hint_enter_comment_v2">Add a public comment …</string>
+    <string name="readMore">" "See more</string>
+    <string name="see_all">See all</string>
+    <string name="unSubscriptionConfigMessage">You will not receive any update when the channel publishes new videos</string>
+    <string name="notification">Notification</string>
+    <string name="videoSavedToLibrary">Video saved to library</string>
+
+    <string name="openApp">Open app</string>
+    <string name="install">Install app</string>
+    <string name="nextVideo">Next video</string>
+    <string name="view">%s view</string>
+    <string name="title_share_video_other">Share your video</string>
+
+    <string name="auto_speed_video">Auto</string>
+    <string name="normal">Normal</string>
+    <string name="video_quality">Video quality</string>
+    <string name="video_options">Video options</string>
+
+    <string name="channel_detail_tab_video">Video</string>
+    <string name="channel_detail_tab_info">Information</string>
+    <string name="title_vote">" "Vote</string>
+    <string name="cancel_ads">@string/cancel</string>
+    <string name="deleted_successfully">Deleted successfully</string>
+    <string name="see_more">See more</string>
+    <string name="see_less">See less</string>
+    <string name="dialog_understand_not_show_again">Do not show this dialog again</string>
+    <string name="title_show_ads">Ad may soon start</string>
+    <string name="video_live_end">This live video has ended</string>
+    <string name="video_live_end_desc">Follow the channel to receive notifications when it starts a live on Kakoak</string>
+    <string name="video_live_error">This live video is interrupted. Please try again</string>
+    <string name="sc_movies">Movies</string>
+    <string name="no_result_found">No result found</string>
+    <string name="enter_otp">Enter OTP</string>
+    <string name="livestream_chat">Live chat</string>
+    <string name="streamer_info">Overview</string>
+    <string name="report">Report</string>
+    <string name="purchase">Purchase</string>
+    <string name="report_content">Enter report message</string>
+    <string name="current_coin">Current Star: %d</string>
+    <string name="loading_livestream">Loading</string>
+    <string name="get_coin_1">1</string>
+    <string name="get_coin_10">10</string>
+    <string name="get_coin_20">20</string>
+    <string name="get_coin_30">30</string>
+    <string name="get_coin_40">40</string>
+    <string name="get_coin_50">50</string>
+    <string name="livestream_report">Your report has been sent</string>
+    <string name="livestream_not_enough_coin">Not enough coin</string>
+    <string name="livestream_report_content">Enter content</string>
+    <string name="livestream_report_type">Choose report type</string>
+    <string name="buy_coin">Buy Star</string>
+    <string name="disable_comment_livestream">Live chat is disabled in this livestream</string>
+    <string name="only_fan">Only followers are allowed to send comment</string>
+    <string name="you_are_block">You are blocked</string>
+    <string name="you_are_block_full">You are blocked from this chat room</string>
+    <string name="video_channel_un_follow_v3">Unfollow \n\"%s\""</string>
+    <string name="delete_successfully">Deleted successfully</string>
+    <string name="content_delete_video">Do you want to delete the video?</string>
+    <string name="you_need_enter_pin">You need to enter the correct pin code</string>
+    <string name="no_have_other_reslution">No have other resolution</string>
+    <string name="package_kakoak25">Kakoak25: 25cents/7-days buy 900 MB</string>
+    <string name="package_kakoak50">Kakoak50: 50cents/7-days buy 2 GB</string>
+    <string name="title_confirm_package_data">You are registering Kakoak package: %s</string>
+    <string name="title_package_kakoak_data">Free data has ended. Continue charging for your data or buy a cheap Kakoak package.</string>
+    <string name="upcoming">Upcoming</string>
+    <string name="error_message_default">Something went wrong, please try again!</string>
+    <string name="no_data">No data</string>
+    <string name="ls_say_hi">Say hi to let %s know you are watching</string>
+    <string name="ls_hi_vn">Hello!</string>
+    <string name="ls_hi_en">Hi!</string>
+    <string name="ls_hi_channel">Hi %s!</string>
+    <string name="ls_hi_enter_text">Type …</string>
+    <string name="ls_friend_watch">%s is watching with you. Let’s invite other friends to watch together.</string>
+    <string name="ls_invite_friend">Invite friends</string>
+    <string name="ls_share">Share</string>
+    <string name="ls_like">Like</string>
+    <string name="ls_unlike">Unlike</string>
+    <string name="ls_share_social">Share on social</string>
+    <string name="ls_like_this_live">You enjoy this video? Like and share it to support the streamer</string>
+    <string name="ls_like_this_channel">Follow %s to receive notifications when the channel posts new videos</string>
+    <string name="show_comment">Comments showed</string>
+    <string name="hide_comment">Comments hidden</string>
+    <string name="comment_level2_hint">Reply comment</string>
+    <string name="reply_comment_title">Replying %s</string>
+    <string name="live_stream">Live</string>
+    <string name="swipe_left_to_view_comment">Swipe left to reveal comments -></string>
+    <string name="loading_comment">Downloading</string>
+    <string name="msg_warning_comment">Your comment is invalid</string>
+    <string name="msg_warning_bad_word">Your comment contains inappropriate language which could not be posted. Please edit and try again</string>
+    <string name="msg_warning_spam">You are posting too many comments. Take a break and try again in %d seconds</string>
+    <string name="msg_warning_duplicate_comment">You can not repeat the previous comment</string>
+    <string name="msg_click_view_comment">Swipe to hide/show comments. Tap on top of the video to see details</string>
+    <string name="live_stream_list_tab_main_home">Livestream</string>
+    <string name="text_view_remind">Nhắc nhở</string>
+    <string name="text_view_time_remaining">Còn 3 phút nữa</string>
+    <string name="search_new">Search…</string>
+    <string name="title_view_video">%1$d views</string>
+    <string name="video_search_new">Videos</string>
+    <string name="title_delete_comment">Delete comment</string>
+    <string name="message_delete_comment">Delete your comment permanently?</string>
+
+    <string name="live">LIVE</string>
+    <string name="top_live">Top Livestream</string>
+    <string name="report_livestream_error_message">Error occurred or you have chosen this report before!</string>
+    <string name="donate_success">Donated successfully!</string>
+    <string name="purchase_success">Purchase successful</string>
+    <string name="leaderboard">Leaderboard</string>
+    <string name="top_star_senders">Top stars senders</string>
+    <string name="send_stars">Send Stars</string>
+    <string name="send_star_to_support">Send stars to support &lt;b>%s&lt;/b></string>
+    <string name="send_star_des1">Show your appreciation with Stars</string>
+    <string name="send_star_des2">Send Stars to show %s some love and make your comment stand out in chat.</string>
+    <string name="comment_preview">Comment preview</string>
+    <string name="hint_edt_send_stars">Add a comment with stars</string>
+    <string name="text_btn_send_star">Send for $%s</string>
+    <string name="live_ended">This livestream has ended</string>
+    <string name="all_livestream">All Livestreams</string>
+    <string name="all_channel">All Livestream Channels</string>
+    <string name="unblock_live_chat_notify_message">You can continue to chat in this livestream now!</string>
+    <string name="text_recharge">Recharge</string>
+    <string name="enter_star_number">Enter star number</string>
+    <string name="search_tab_channel">Channels</string>
+    <string name="last_minute">%d minute ago</string>
+    <string name="last_minutes">%d minutes ago</string>
+    <string name="last_hour">%d hour ago</string>
+    <string name="last_hours">%d hours ago</string>
+    <string name="last_day">%d day ago</string>
+    <string name="last_days">%d days ago</string>
+    <string name="all_image">All images</string>
+    <string name="post_video">Upload video</string>
+    <string name="not_found_search_hint">No results found</string>
+    <string name="add_later">Add to Watch later</string>
+    <string name="add_later_success">Added to Watch later</string>
+    <string name="music_total_video">%d video</string>
+    <string name="music_total_videos">%d videos</string>
+    <string name="video_channel_created_at">Create channels from</string>
+    <string name="video_channel_un_follow_cancel">Cancel</string>
+    <string name="no_channel_video">Your video list is empty</string>
+    <string name="no_channel_contain_video">No videos to display</string>
+    <string name="no_channel_video_des">Upload interesting videos to share with your Kakoak friends</string>
+    <string name="text_edit">Edit</string>
+    <string name="approved">Approved</string>
+    <string name="introduction">Introduction</string>
+    <string name="touch_to_change_album">Tap to change albums</string>
+    <string name="btn_cancel_option">Cancel</string>
+    <string name="add_tag">Add tag</string>
+    <string name="msg_waning_click_say_hi">You have sent this comment before. Please type another comment.</string>
+    <string name="video_channel_analytics">Channel analytics</string>
+    <string name="view_not_paid">View not paid</string>
+    <string name="estimated_revenue">Estimated revenue</string>
+    <string name="sent_gift">Donate %s</string>
+
+
+    <!--foursquare-->
+    <!--<string name="api_google_maps" translatable="false">AIzaSyAw__pu44jXFtz-6dyvunmeEWURpaP4IVA</string>-->
+    <!--category-->
+    <!--<string name="ga_category_contacts" translatable="false">Danh bạ</string>-->
+    <!--action-->
+    <!--lable ga-->
+
+    <!--GA onmedia-->
+
+    <!-- -->
+
+    <!--ga-->
+
+    <!--content default get from config-->
+    <string name="register_vip_confirm" translatable="false">Mời Quý khách xác nhận đăng ký gói cước Kakoak để được miễn phí nhắn tin nội mạng Telemor và miễn cước 3G nhắn tin, nghe nhạc trong Kakoak (Cước phí 2.500đ/tuần đầu tiên, 5.000đ/tuần tiếp theo)</string>
+
+    <!--lucky wheel string-->
+    <!--crbt-->
+
+    <!--lưu bút-->
+    <!--<string name="guest_book_default_name" translatable="false">%s \'s Lưu bút</string>-->
+
+    //😝 😮 😓 😠
+
+    <string name="layout_behavior" translatable="false">com.vtm.ringme.CusBottomSheetBehavior</string>
+
+    <!--Text từ tìm kiếm bên Keeng-->
+
+
+    <string name="tools_title_preview" translatable="false">\'Được ăn cả, Ngã về 0\' - giải đấu Kakoak Free Fire Fight hứa hẹn \'khét lẹt\'</string>
+    <string name="tools_datetime_preview" translatable="false">5 giờ trước</string>
+    <string name="tools_total_view_preview" translatable="false">6 triệu lượt xem</string>
+
+
+    <string name="donate_fail" translatable="false">Failed to donate. Do you want to try again?</string>
+    <string name="invalid_number_notify" translatable="false">Please enter a valid number</string>
+    <string name="notice" translatable="false">Notice!</string>
+    <string name="drop_star_popup_title" translatable="false">Streamer\'s just given you some stars</string>
+    <string name="drop_star_popup_content" translatable="false">Hurry up! Press the button below to \n receive stars!</string>
+    <string name="take_now" translatable="false">Take now</string>
+    <string name="receive_star_success_message" translatable="false">Congratulations! You have received %d stars from %s</string>
+    <string name="receive_star_fail_message" translatable="false">Sorry, other viewers got all the stars. Better luck next time!</string>
+    <string name="recharge_star" translatable="false">Recharge stars</string>
+    <string name="confirm_recharge_star" translatable="false">Confirm to recharge %s stars for $%s?</string>
+    <string name="donate_term" translatable="false">By placing this order, you agree to Kakoak\'s <font color="#1A74E5">Stars Terms</font> and <font color="#1A74E5">Payment Terms</font>. | <font color="#1A74E5">Learn more about stars.</font></string>
+    <string name="star_payment_terms" translatable="false">Stars &amp; Payment Terms</string>
+    <string name="not_enough_stars" translatable="false">You don\'t have enough stars to donate. Please recharge!</string>
+    <string name="recharge_success" translatable="false">Recharge successfully!</string>
+    <string name="notify_me" translatable="false">Notify me</string>
+    <string name="notified_me" translatable="false">Notified me</string>
+    <!--    <string name="upcoming" translatable="false">UPCOMING</string>-->
+    <string name="live_at" translatable="false">Live at %s</string>
+    <string name="waiting_number" translatable="false">%s waiting</string>
+    <string name="other_videos" translatable="false">OTHER VIDEOS</string>
+    <string name="predict_same_result" translatable="false">Predict the number of people who choose the same result as you</string>
+    <string name="confirm_vote" translatable="false">Confirm Vote</string>
+    <string name="select_vote_alert" translatable="false">Please select an option</string>
+    <string name="enter_predict_number_alert" translatable="false">Please enter your predict number</string>
+    <string name="vote_success" translatable="false">Vote Success</string>
+    <string name="enter_predict_number" translatable="false">Enter your predict number</string>
+    <string name="participate_in_vote" translatable="false">Participate in predicting results. </string>
+
 </resources>

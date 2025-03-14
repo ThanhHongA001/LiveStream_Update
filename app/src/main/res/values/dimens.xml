@@ -1,3 +1,985 @@
 <resources>
+    <!-- Khoảng cách mặc định cho Floating Action Button -->
+
+    <dimen name="sc_padding_normal">16dp</dimen>
+    <dimen name="sc_spacing_normal">8dp</dimen>
+    <dimen name="sc_padding_sc_loyalty_exchange">12dp</dimen>
+    <dimen name="sc_spacing_sc_loyalty_exchange">4dp</dimen>
+    <dimen name="sc_text_size_primary">16sp</dimen>
+    <dimen name="sc_text_size_second">14sp</dimen>
+
+    <dimen name="jz_start_button_w_h_normal">45dp</dimen>
+    <dimen name="jz_start_button_w_h_fullscreen">62dp</dimen>
+    <dimen name="jz_rewind_forward_w_h_normal">35dp</dimen>
+
+    <dimen name="fixed_min_width">120dp</dimen>
+    <dimen name="fixed_min_width_small_views">104dp</dimen>
+    <dimen name="fixed_max_width">168dp</dimen>
+    <dimen name="fixed_width_padding">12dp</dimen>
+
+    <dimen name="fixed_height">56dp</dimen>
+    <dimen name="fixed_no_title_icon_container_height">42dp</dimen>
+    <dimen name="fixed_no_title_icon_container_width">56dp</dimen>
+    <dimen name="fixed_no_title_icon_height">32dp</dimen>
+    <dimen name="fixed_no_title_icon_width">32dp</dimen>
+    <dimen name="fixed_height_top_padding_inactive">2dp
+    </dimen><!-- 8(Top Padding) - 12/2(extra padding due to badges) = 2 -->
+    <dimen name="fixed_height_top_padding_active">0dp
+    </dimen><!-- 6(Top Padding) - 12/2(extra padding due to badges) = 0 -->
+    <dimen name="fixed_height_bottom_padding">10dp</dimen>
+
+    <dimen name="fixed_label_active">14sp</dimen>
+    <dimen name="fixed_label_inactive">12sp</dimen>
+    <item name="fixed_label_active_to_inactive_ratio" format="float" type="dimen">0.857</item>
+
+    <dimen name="fixed_icon_grid">18dp</dimen>
+    <dimen name="fixed_icon_badge_grid_height">36dp
+    </dimen><!-- this adds 6 dp extra to top and bottom icon -->
+    <dimen name="fixed_icon_badge_grid_width">48dp
+    </dimen><!-- this adds 6 dp extra to top and bottom icon -->
+
+
+    <dimen name="shifting_min_width_active">96dp</dimen>
+    <dimen name="shifting_max_width_active">168dp</dimen>
+    <dimen name="shifting_min_width_inactive">64dp</dimen>
+    <dimen name="shifting_max_width_inactive">96dp</dimen>
+    <dimen name="shifting_width_custom_padding">6dp</dimen>
+
+    <dimen name="shifting_height">56dp</dimen>
+    <dimen name="shifting_no_title_icon_container_height">42dp</dimen>
+    <dimen name="shifting_no_title_icon_container_width">56dp</dimen>
+    <dimen name="shifting_no_title_icon_height">32dp</dimen>
+    <dimen name="shifting_no_title_icon_width">32dp</dimen>
+    <dimen name="shifting_height_bottom_padding_inactive">16dp
+    </dimen><!-- not used because in inactive state text-view will be hidden and for icon top padding would be enough -->
+    <dimen name="shifting_height_bottom_padding_active">10dp</dimen>
+    <dimen name="shifting_height_top_padding_active">0dp
+    </dimen><!-- 6(Top padding) - 12/2(extra padding due to badges) = 0 -->
+    <dimen name="shifting_height_top_padding_inactive">10dp
+    </dimen><!-- 56(total) - 24(icon) - 16(bottom padding inactive) = 16 ||| 16 - 12/2(extra padding due to badges)  = 10-->
+
+    <dimen name="shifting_label">14sp</dimen>
+
+
+    <dimen name="shifting_icon_grid">18dp</dimen>
+    <dimen name="shifting_icon_badge_grid_height">36dp</dimen>
+    <dimen name="shifting_icon_badge_grid_width">48dp</dimen>
+
+    <dimen name="bottom_navigation_elevation">8dp</dimen>
+    <dimen name="bottom_navigation_height">56dp</dimen>
+    <dimen name="bottom_navigation_padded_height">64dp</dimen>
+    <dimen name="bottom_navigation_top_margin_correction">-8dp</dimen><!-- 64 - 56 = 8 -->
+
+    <dimen name="badge_text_size">12sp</dimen><!-- 10 -->
+    <dimen name="badge_corner_radius">13dp</dimen><!-- 15 -->
+    <dimen name="badge_width_padding">4dp</dimen><!-- 4 -->
+    <dimen name="badge_height_padding">1dp</dimen><!-- 1 -->
+    <dimen name="badge_top_margin">2dp</dimen><!-- 2 -->
+
+    <dimen name="margin_top_text">13dp</dimen>
+    <dimen name="text_size">17dp</dimen>
+    <dimen name="shifting_bottom_navigation_dot_size">12dp</dimen>
+
+
+    <dimen name="padding_16">16dp</dimen>
+    <dimen name="padding_8">8dp</dimen>
+    <dimen name="padding_10">10dp</dimen>
+    <dimen name="margin_8">8dp</dimen>
+    <dimen name="margin_5">5dp</dimen>
+    <dimen name="tabs_height">48dp</dimen>
+    <dimen name="item_header">15sp</dimen>
+    <dimen name="item_title">14sp</dimen>
+    <dimen name="item_content">13sp</dimen>
+    <dimen name="width_singer_home">92dp</dimen>
+    <item name="aspect_16_9" format="float" type="dimen">1.78</item>
+    <dimen name="drawable_padding">4dp</dimen>
+    <dimen name="padding_around_buttons">8dp</dimen>
+
+    <dimen name="floating_size">64dp</dimen>
+    <dimen name="padding_5">5dp</dimen>
+
+
+    <dimen name="width_poster_movie">200dp</dimen>
+    <dimen name="height_poster_movie">300dp</dimen>
+
+    <dimen name="width_poster_movie_feed">100dp</dimen>
+    <dimen name="height_poster_movie_feed">150dp</dimen>
+
+
+    <dimen name="v5_header_text_size">28dp</dimen>
+    <dimen name="v5_header_tab_home_text_size">24dp</dimen>
+    <dimen name="v5_main_title_text_size">16dp</dimen>
+    <dimen name="v5_sub_title_text_size">14dp</dimen>
+    <dimen name="v5_body_text_size">14dp</dimen>
+    <dimen name="v5_link_text_size">12dp</dimen>
+    <dimen name="v5_dialog_text_action_size">22dp</dimen>
+    <dimen name="v5_text_avatar">18dp</dimen>
+    <dimen name="v5_dialog_width">270dp</dimen>
+    <dimen name="v5_title_dialog_margin_vertical">15dp</dimen>
+    <dimen name="v5_text_toast_size">16dp</dimen>
+
+    <dimen name="text_selected">@dimen/v5_header_text_size</dimen>
+    <dimen name="text_unselected">@dimen/v5_body_text_size</dimen>
+
+    <dimen name="status_bar_height_v2">25dp</dimen>
+    <dimen name="v5_avatar_small_size">30dp</dimen>
+    <dimen name="v5_avatar_normal_size">50dp</dimen>
+    <dimen name="v5_avatar_big_size">80dp</dimen>
+    <dimen name="v5_avatar_stranger_music">68dp</dimen>
+    <dimen name="v5_layout_padding">15dp</dimen>
+    <dimen name="v5_layout_padding_vertical">20dp</dimen>
+    <dimen name="v5_item_margin">5dp</dimen>
+
+    <!--setting-->
+    <dimen name="v5_icon_setting_right_size">16dp</dimen>
+    <dimen name="v5_icon_setting_size">32dp</dimen>
+    <dimen name="v5_text_setting_size">13dp</dimen>
+    <dimen name="v5_content_setting_margin_left">10dp</dimen>
+    <dimen name="setting_title_size">17sp</dimen>
+    <dimen name="v5_icon_drag_size">25dp</dimen>
+    <dimen name="v5_switch_size_width">50dp</dimen>
+    <dimen name="v5_switch_size_height">30dp</dimen>
+    <dimen name="v5_text_infor_setting_margin_right">5dp</dimen>
+    <dimen name="v5_ic_size_file_empty">70dp</dimen>
+
+    <dimen name="v5_view_line_height">0.8dp</dimen>
+    <dimen name="v5_line_margin_top">15dp</dimen>
+    <dimen name="v5_text_content_small_size">12sp</dimen>
+    <dimen name="v5_margin_contents_same_row">2dp</dimen>
+    <dimen name="v5_layout_setting_margin_top">15dp</dimen>
+    <dimen name="v5_icon_question_size">30dp</dimen>
+    <dimen name="v5_icon_question_padding">7dp</dimen>
+    <dimen name="v5_txt_infor_setting_margin_top">3dp</dimen>
+    <dimen name="v5_icon_question_margin_left">5dp</dimen>
+    <dimen name="v5_min_width_button">15dp</dimen>
+    <dimen name="v5_min_height_button">20dp</dimen>
+    <dimen name="v5_button_padding_top">8dp</dimen>
+    <dimen name="v5_button_padding_left">18dp</dimen>
+    <dimen name="v5_padding_bottom_om">3dp</dimen>
+
+    <dimen name="v5_corner_radius_item_feedback">10dp</dimen>
+
+    <dimen name="v5_view_pin_radius">10dp</dimen>
+    <dimen name="v5_view_pin_margin">30dp</dimen>
+
+    <dimen name="v5_padding_left_right">15dp</dimen>
+
+    <dimen name="v5_desc_text_size">12dp</dimen>
+    <dimen name="v5_label_text_size">11dp</dimen>
+    <dimen name="v5_spacing_normal">15dp</dimen>
+    <dimen name="v5_margin_normal">10dp</dimen>
+    <dimen name="v5_drawable_padding">4dp</dimen>
+    <dimen name="v5_layout_line_height">40dp</dimen>
+    <dimen name="v5_title_item_margin_top">10dp</dimen>
+    <dimen name="v5_title_item_margin_end">15dp</dimen>
+    <dimen name="v5_title_large_item_margin_top">0dp</dimen>
+    <dimen name="v5_title_large_item_margin_end">10dp</dimen>
+    <dimen name="v5_title_normal_item_margin_end">15dp</dimen>
+    <dimen name="v5_title_small_item_margin_end">25dp</dimen>
+    <dimen name="v5_ic_add_image_feedback_size">50dp</dimen>
+    <dimen name="v5_height_lady_new">210dp</dimen>
+
+    <item name="aspect_large_content" format="float" type="dimen">1.786</item>
+    <item name="aspect_grid_video" format="float" type="dimen">1.786</item>
+    <item name="aspect_grid_news" format="float" type="dimen">1.786</item>
+    <item name="aspect_grid_tiin" format="float" type="dimen">1.786</item>
+    <item name="aspect_grid_comic" format="float" type="dimen">1</item>
+    <item name="aspect_grid_movie" format="float" type="dimen">0.75</item> <!--theo new ui-->
+    <!--    <item name="aspect_grid_movie" format="float" type="dimen">0.67</item>-->
+    <item name="aspect_grid_movie_vertical" format="float" type="dimen">1.786</item>
+    <dimen name="v5_margin_top_action_bar_home">10dp</dimen>
+    <item name="aspect_large_tiin" format="float" type="dimen">2.333</item>
+    <dimen name="v5_size_avatar_stranger">55dp</dimen>
+
+
+    <dimen name="image_radius_tab_home">8dp</dimen>
+    <dimen name="tab_home_padding_normal">16dp</dimen>
+    <dimen name="tab_home_spacing_normal">8dp</dimen>
+
+    <item name="max_line_title" type="dimen">10</item>
+
+    <dimen name="video_width">130dp</dimen>
+    <dimen name="video_height">73dp</dimen>
+    <dimen name="bottom_bar_height">55dp</dimen>
+    <dimen name="image_radius_normal">4dp</dimen>
+    <dimen name="image_radius_large">6dp</dimen>
+
+
+    <dimen name="width_captcha">114dp</dimen>
+    <dimen name="height_captcha">56dp</dimen>
+    <dimen name="width_title_commission_left">150dp</dimen>
+
+    <dimen name="dimen0dp">0dp</dimen>
+    <dimen name="dimen0.5dp">0.5dp</dimen>
+    <dimen name="dimen1dp">1dp</dimen>
+    <dimen name="dimen2dp">2dp</dimen>
+    <dimen name="dimen3dp">3dp</dimen>
+    <dimen name="dimen4dp">4dp</dimen>
+    <dimen name="dimen5dp">5dp</dimen>
+    <dimen name="dimen6dp">6dp</dimen>
+    <dimen name="dimen7dp">7dp</dimen>
+    <dimen name="dimen8dp">8dp</dimen>
+    <dimen name="dimen9dp">9dp</dimen>
+    <dimen name="dimen10dp">10dp</dimen>
+    <dimen name="dimen11dp">11dp</dimen>
+    <dimen name="dimen12dp">12dp</dimen>
+    <dimen name="dimen13dp">13dp</dimen>
+    <dimen name="dimen14dp">14dp</dimen>
+    <dimen name="dimen15dp">15dp</dimen>
+    <dimen name="dimen16dp">16dp</dimen>
+    <dimen name="dimen17dp">17dp</dimen>
+    <dimen name="dimen18dp">18dp</dimen>
+    <dimen name="dimen19dp">19dp</dimen>
+    <dimen name="dimen20dp">20dp</dimen>
+    <dimen name="dimen21dp">21dp</dimen>
+    <dimen name="dimen22dp">22dp</dimen>
+    <dimen name="dimen23dp">23dp</dimen>
+    <dimen name="dimen24dp">24dp</dimen>
+    <dimen name="dimen25dp">25dp</dimen>
+    <dimen name="dimen26dp">26dp</dimen>
+    <dimen name="dimen27dp">27dp</dimen>
+    <dimen name="dimen28dp">28dp</dimen>
+    <dimen name="dimen29dp">29dp</dimen>
+    <dimen name="dimen30dp">30dp</dimen>
+    <dimen name="dimen31dp">31dp</dimen>
+    <dimen name="dimen32dp">32dp</dimen>
+    <dimen name="dimen33dp">33dp</dimen>
+    <dimen name="dimen34dp">34dp</dimen>
+    <dimen name="dimen35dp">35dp</dimen>
+    <dimen name="dimen36dp">36dp</dimen>
+    <dimen name="dimen37dp">37dp</dimen>
+    <dimen name="dimen38dp">38dp</dimen>
+    <dimen name="dimen39dp">39dp</dimen>
+    <dimen name="dimen40dp">40dp</dimen>
+    <dimen name="dimen41dp">41dp</dimen>
+    <dimen name="dimen42dp">42dp</dimen>
+    <dimen name="dimen43dp">43dp</dimen>
+    <dimen name="dimen44dp">44dp</dimen>
+    <dimen name="dimen45dp">45dp</dimen>
+    <dimen name="dimen46dp">46dp</dimen>
+    <dimen name="dimen47dp">47dp</dimen>
+    <dimen name="dimen48dp">48dp</dimen>
+    <dimen name="dimen49dp">49dp</dimen>
+    <dimen name="dimen50dp">50dp</dimen>
+    <dimen name="dimen51dp">51dp</dimen>
+    <dimen name="dimen52dp">52dp</dimen>
+    <dimen name="dimen53dp">53dp</dimen>
+    <dimen name="dimen54dp">54dp</dimen>
+    <dimen name="dimen55dp">55dp</dimen>
+    <dimen name="dimen56dp">56dp</dimen>
+    <dimen name="dimen57dp">57dp</dimen>
+    <dimen name="dimen58dp">58dp</dimen>
+    <dimen name="dimen59dp">59dp</dimen>
+    <dimen name="dimen60dp">60dp</dimen>
+    <dimen name="dimen61dp">61dp</dimen>
+    <dimen name="dimen62dp">62dp</dimen>
+    <dimen name="dimen63dp">63dp</dimen>
+    <dimen name="dimen64dp">64dp</dimen>
+    <dimen name="dimen65dp">65dp</dimen>
+    <dimen name="dimen66dp">66dp</dimen>
+    <dimen name="dimen67dp">67dp</dimen>
+    <dimen name="dimen68dp">68dp</dimen>
+    <dimen name="dimen69dp">69dp</dimen>
+    <dimen name="dimen70dp">70dp</dimen>
+    <dimen name="dimen72dp">72dp</dimen>
+    <dimen name="dimen75dp">75dp</dimen>
+    <dimen name="dimen80dp">80dp</dimen>
+    <dimen name="dimen81dp">81dp</dimen>
+    <dimen name="dimen90dp">90dp</dimen>
+    <dimen name="dimen99dp">99dp</dimen>
+    <dimen name="dimen100dp">100dp</dimen>
+    <dimen name="dimen110dp">110dp</dimen>
+    <dimen name="dimen120dp">120dp</dimen>
+    <dimen name="dimen128dp">128dp</dimen>
+    <dimen name="dimen130dp">130dp</dimen>
+    <dimen name="dimen132dp">132dp</dimen>
+    <dimen name="dimen140dp">140dp</dimen>
+    <dimen name="dimen144dp">144dp</dimen>
+    <dimen name="dimen150dp">150dp</dimen>
+    <dimen name="dimen160dp">160dp</dimen>
+    <dimen name="dimen170dp">170dp</dimen>
+    <dimen name="dimen176dp">176dp</dimen>
+    <dimen name="dimen180dp">180dp</dimen>
+    <dimen name="dimen190dp">190dp</dimen>
+    <dimen name="dimen200dp">200dp</dimen>
+    <dimen name="dimen220dp">220dp</dimen>
+
+    <dimen name="popup_width">300dp</dimen>
+    <dimen name="popup_height">450dp</dimen>
+    //text sp
+    <dimen name="dimen_text0sp">0sp</dimen>
+    <dimen name="dimen_text1sp">1sp</dimen>
+    <dimen name="dimen_text2sp">2sp</dimen>
+    <dimen name="dimen_text3sp">3sp</dimen>
+    <dimen name="dimen_text4sp">4sp</dimen>
+    <dimen name="dimen_text5sp">5sp</dimen>
+    <dimen name="dimen_text6sp">6sp</dimen>
+    <dimen name="dimen_text7sp">7sp</dimen>
+    <dimen name="dimen_text8sp">8sp</dimen>
+    <dimen name="dimen_text9sp">9sp</dimen>
+    <dimen name="dimen_text10sp">10sp</dimen>
+    <dimen name="dimen_text11sp">11sp</dimen>
+    <dimen name="dimen_text12sp">12sp</dimen>
+    <dimen name="dimen_text13sp">13sp</dimen>
+    <dimen name="dimen_text14sp">14sp</dimen>
+    <dimen name="dimen_text15sp">15sp</dimen>
+    <dimen name="dimen_text16sp">16sp</dimen>
+    <dimen name="dimen_text17sp">17sp</dimen>
+    <dimen name="dimen_text18sp">18sp</dimen>
+    <dimen name="dimen_text19sp">19sp</dimen>
+    <dimen name="dimen_text20sp">20sp</dimen>
+    <dimen name="dimen_text21sp">21sp</dimen>
+    <dimen name="dimen_text22sp">22sp</dimen>
+    <dimen name="dimen_text23sp">23sp</dimen>
+    <dimen name="dimen_text24sp">24sp</dimen>
+    <dimen name="dimen_text25sp">25sp</dimen>
+    <dimen name="dimen_text26sp">26sp</dimen>
+    <dimen name="dimen_text27sp">27sp</dimen>
+    <dimen name="dimen_text28sp">28sp</dimen>
+    <dimen name="dimen_text29sp">29sp</dimen>
+    <dimen name="dimen_text30sp">30sp</dimen>
+    <dimen name="dimen_text31sp">31sp</dimen>
+
+    //todo dimen v5 tiin
+    <dimen name="v5_top_header_tiin">20dp</dimen>
+    <dimen name="v5_spacing_tiin">15dp</dimen>
+    <dimen name="v5_top_title_tiin">5dp</dimen>
+    <dimen name="v5_top_subtitle_tiin">5dp</dimen>
+    <dimen name="v5_padding_more_tiin">44dp</dimen>
+
+
+    <!--home_menu-->
+    <dimen name="icon_menu_height">25dp</dimen>
+    <!-- dialog -->
+    <dimen name="progress_size">36dp</dimen>
+    <dimen name="popup_fragment_onmedia_width">310dp</dimen>
+    <dimen name="popup_fragment_title_height">48dp</dimen>
+    <dimen name="popup_fragment_title_padding_left">15dp</dimen>
+    <dimen name="popup_fragment_content_padding_top">17dp</dimen>
+    <dimen name="popup_fragment_content_padding_bottom">14dp</dimen>
+    <dimen name="popup_fragment_button_height">43dp</dimen>
+    <dimen name="popup_fragment_upload_button_height">65dp</dimen>
+    <!-- divider -->
+    <dimen name="divider_height">1dp</dimen>
+    <dimen name="divider_avatar_group">1px</dimen>
+    <!-- button -->
+    <dimen name="monopoly_corners">6dp</dimen>
+    <dimen name="thread_type_corners">14dp</dimen>
+    <dimen name="button_corners">18dp</dimen>
+    <dimen name="button_corners_profile">22dp</dimen>
+    <dimen name="edittext_om_corners">32dp</dimen>
+
+    <dimen name="button_height">40dp</dimen>
+    <dimen name="button_small_height">35dp</dimen>
+    <dimen name="button_corners_round">15dp</dimen>
+    <dimen name="button_width_level4">240dp</dimen>
+    <dimen name="button_width_level3">180dp</dimen>
+    <dimen name="button_width_level2">140dp</dimen>
+    <dimen name="button_share_music_height">30dp</dimen>
+    <!--contact-->
+    <dimen name="item_padding_left">7dp</dimen>
+    <dimen name="item_contact_charecter_height">22dp</dimen>
+    <dimen name="item_charecter_member_group_height">32dp</dimen>
+    <dimen name="item_header_number_height">30dp</dimen>
+    <dimen name="avatar_contact_detail_height">86dp</dimen>
+    <dimen name="avatar_contact_detail_call">96dp</dimen>
+    <dimen name="avatar_contact_detail_height_2">120dp</dimen>
+    <dimen name="avatar_call_height">120dp</dimen>
+    <dimen name="avatar_small_size">70dp</dimen>
+    <dimen name="avatar_small2_size">62dp</dimen>
+    <dimen name="avatar_action_bar">38dp</dimen>
+    <dimen name="avatar_home_menu_size">80dp</dimen>
+    <dimen name="avatar_home_menu_size_2">62dp</dimen>
+    <dimen name="reeng_chat_edittext_min_height">40dp</dimen>
+    <dimen name="reeng_chat_edittext_min_height_new">36dp</dimen>
+    <dimen name="keyboard_height">200dp</dimen>
+    <dimen name="edit_status_height">60dp</dimen>
+    <dimen name="avatar_song_height">50dp</dimen>
+    <!--sliding menu-->
+    <dimen name="avatar_thumbnail_mini_size">27dp</dimen>
+    <dimen name="avatar_thumbnail_size">40dp</dimen>
+    <dimen name="image_notification_thumbnail_size">35dp</dimen>
+    <dimen name="avatar_reply_thumbnail_size">21dp</dimen>
+    <dimen name="icon_like_size">37dp</dimen>
+    <dimen name="message_sender_name_size">150dp</dimen>
+    <dimen name="message_time_text_margin">10dp</dimen>
+    <dimen name="message_text_max_width">220dp</dimen>
+    <dimen name="message_text_min_width">90dp</dimen>
+    <dimen name="image_thumbnail_size">200dp</dimen>
+    <dimen name="image_thumbnail_size_height">140dp</dimen>
+    <dimen name="image_thumbnail_video_height">112dp</dimen>
+    <dimen name="image_thumbnail_height">160dp</dimen>
+    <dimen name="message_attach_icon_max_width">30dp</dimen>
+    <dimen name="message_attach_filename_max_width">110dp</dimen>
+    <dimen name="file_size">48dp</dimen>
+    <!---->
+    <dimen name="emoticon_grid_height">30dp</dimen>
+    <dimen name="sticker_grid_height">85dp</dimen>
+    <dimen name="sticker_preview_height">100dp</dimen>
+    <dimen name="reeng_chat_option_padding_bottom">20dp</dimen>
+    <dimen name="reeng_chat_option_padding_top">25dp</dimen>
+    <dimen name="reeng_progress_wheel_diameter">165dp</dimen>
+    <dimen name="reeng_message_no_avatar_padding">6dp</dimen>
+    <dimen name="reeng_message_buddle_ex_padding">6dp</dimen>
+    <dimen name="item_thread_view_height">66dp</dimen>
+    <dimen name="item_thread_view_height_half">33dp</dimen>
+    <dimen name="item_setting_height">66dp</dimen>
+    <dimen name="item_icon_kakoak_game">55dp</dimen>
+    <dimen name="item_thread_avatar_height">54dp</dimen>
+    <dimen name="item_avatar_lixi">80dp</dimen>
+    <dimen name="item_avatar_lixi_parent">82dp</dimen>
+    <dimen name="corner_thread_avatar">27dp</dimen>
+    <dimen name="item_thread_avatar_fram_height">55dp</dimen>
+    <dimen name="item_lock_app">65dp</dimen>
+    <dimen name="item_suggest_avatar_height">66dp</dimen>
+    <dimen name="message_share_contact_max_width">173dp</dimen>
+    <dimen name="item_footer_hold_more_option_height">50dp</dimen>
+    <dimen name="layout_reply_height">39dp</dimen>
+    <!--setting-->
+    <dimen name="margin_more_content_1">1dp</dimen>
+    <dimen name="margin_more_content_2">2dp</dimen>
+    <dimen name="margin_more_content_3">3dp</dimen>
+    <dimen name="margin_more_content_4">4dp</dimen>
+    <dimen name="margin_more_content_5">5dp</dimen>
+    <dimen name="margin_more_content_6">6dp</dimen>
+    <dimen name="margin_more_content_7">7dp</dimen>
+    <dimen name="margin_more_content_9">9dp</dimen>
+    <dimen name="margin_more_content_10">10dp</dimen>
+    <dimen name="margin_more_content_12">12dp</dimen>
+    <dimen name="margin_more_content_13">13dp</dimen>
+    <dimen name="margin_more_content_15">15dp</dimen>
+    <dimen name="margin_more_content_16">16dp</dimen>
+    <dimen name="margin_more_content_17">17dp</dimen>
+    <dimen name="margin_more_content_18">18dp</dimen>
+    <dimen name="margin_more_content_20">20dp</dimen>
+    <dimen name="margin_more_content_23">23dp</dimen>
+    <dimen name="margin_more_content_25">25dp</dimen>
+    <dimen name="margin_more_content_30">30dp</dimen>
+    <dimen name="margin_more_content_35">35dp</dimen>
+    <dimen name="margin_more_content_40">40dp</dimen>
+    <dimen name="margin_more_content_50">50dp</dimen>
+    <dimen name="margin_more_content_60">60dp</dimen>
+    <dimen name="margin_more_content_70">70dp</dimen>
+    <dimen name="margin_more_content_80">80dp</dimen>
+
+    <dimen name="margin_keyboard">60dp</dimen>
+    <dimen name="message_setting_row_height">56dp</dimen>
+    <dimen name="message_setting_row_padding_left">12dp</dimen>
+    <!--text size-->
+    <dimen name="kakoak_text_size_level_0">10sp</dimen>
+    <dimen name="kakoak_text_size_level_0_in_dp">10dp</dimen>
+    <dimen name="kakoak_text_size_level_1">12sp</dimen>
+    <dimen name="kakoak_text_size_level_1_in_dp">12dp</dimen>
+    <dimen name="kakoak_text_size_level_1_5">13sp</dimen>
+    <dimen name="kakoak_text_size_level_1_5_in_dp">13dp</dimen>
+    <dimen name="kakoak_text_size_level_1_8">14sp</dimen>
+
+    <dimen name="kakoak_text_size_level_2">14.5sp</dimen>
+    <dimen name="kakoak_text_size_level_2_in_dp">14.5dp</dimen>
+    <dimen name="kakoak_text_size_level_2_5">15sp</dimen>
+    <dimen name="kakoak_text_size_level_2_5_in_dp">15dp</dimen>
+    <dimen name="kakoak_text_size_level_3">18sp</dimen>
+    <dimen name="kakoak_text_size_level_3_in_dp">18dp</dimen>
+    <dimen name="kakoak_text_size_level_4">22sp</dimen>
+    <dimen name="kakoak_text_size_level_4_5">24sp</dimen>
+    <dimen name="kakoak_text_size_level_5">26sp</dimen>
+    <dimen name="kakoak_text_size_level_6">28sp</dimen>
+    <dimen name="kakoak_text_size_level_7">30sp</dimen>
+    <dimen name="kakoak_text_size_level_8">32sp</dimen>
+    <dimen name="kakoak_text_size_level_9">34sp</dimen>
+    <dimen name="kakoak_text_size_level_10">38sp</dimen>
+    <!---->
+    <dimen name="size_like_com">12sp</dimen>
+    <!-- -->
+    <dimen name="list_item_padding_all">10dp</dimen>
+    <dimen name="list_item_padding_all_top">6dp</dimen>
+    <dimen name="divider_size">0.25dp</dimen>
+    <dimen name="about_logo">140dp</dimen>
+    <dimen name="about_padding_bottom">25dp</dimen>
+    <!--Login-->
+    <dimen name="margin_top_kakoak_welcome">120dp</dimen>
+    <dimen name="margin_bottom_kakoak_welcome">80dp</dimen>
+    <dimen name="margin_text_button">30dp</dimen>
+    <dimen name="margin_text_bottom">15dp</dimen>
+    <dimen name="kakoak_abs_default_height">48dp</dimen>
+    <dimen name="message_sender_name_padding_left">65dp</dimen>
+    <dimen name="height_for_text_lv1">30dp</dimen>
+    <!--   chat bar -->
+    <dimen name="chat_right_action_width">40dp</dimen>
+    <dimen name="emoticon_icon_height">44dp</dimen>
+    <dimen name="emoticon_icon_width">50dp</dimen>
+    <dimen name="voice_icon_width">48dp</dimen>
+    <dimen name="margin_right_send_layout">-22dp</dimen>
+    <dimen name="right_chat_bar_layout_width">88dp</dimen>
+    <!--   chat message -->
+    <dimen name="loading_progess_bar_width">20dip</dimen>
+    <dimen name="voice_progress_bar_width">100dp</dimen>
+    <dimen name="voice_progress_bar_height">20dp</dimen>
+    <dimen name="voice_progress_vote_width">150dp</dimen>
+    <dimen name="voice_progress_vote_height">24dp</dimen>
+    <!-- -->
+    <dimen name="min_height_layout_status">30dp</dimen>
+    <dimen name="margin_message_status_1">13dp</dimen>
+    <dimen name="margin_message_status_2">3dp</dimen>
+    <!--   buddle padding -->
+    <dimen name="receive_buddle_padding_left">15dp</dimen>
+    <dimen name="receive_buddle_padding_right">15dp</dimen>
+
+    <dimen name="send_buddle_padding_left">15dp</dimen>
+    <dimen name="send_buddle_padding_right">15dp</dimen>
+
+    <dimen name="buddle_padding_top">8dp</dimen>
+    <dimen name="buddle_padding_bottom">8dp</dimen>
+    <dimen name="sender_name_padding_bottom">4dp</dimen>
+    <dimen name="buddle_margin_for_time">60dp</dimen>
+    <dimen name="buddle_margin_for_time_1">-60dp</dimen>
+    <!-- -->
+    <dimen name="buddle_margin_bottom">4dp</dimen>
+    <!--  voice buddle padding -->
+    <dimen name="send_voice_buddle_padding_left">10dp</dimen>
+    <dimen name="receive_voice_buddle_padding_left">15dp</dimen>
+    <!--  image buddle padding -->
+    <dimen name="send_image_buddle_padding_left">4dp</dimen>
+    <dimen name="receive_image_buddle_padding_left">4dp</dimen>
+    <dimen name="image_buddle_padding_top">4dp</dimen>
+    <dimen name="send_image_buddle_padding_right">4dp</dimen>
+    <dimen name="receive_image_buddle_padding_right">4dp</dimen>
+    <dimen name="image_buddle_padding_bottom">4dp</dimen>
+    <dimen name="circle_image_border">0.0dp</dimen>
+    <!-- Image browser -->
+    <dimen name="photo_width">110dp</dimen>
+    <dimen name="photo_height">100dp</dimen>
+    <dimen name="photo_director_width">150dp</dimen>
+    <dimen name="photo_director_height">140dp</dimen>
+    <dimen name="browser_button_width">120dp</dimen>
+    <dimen name="browser_button_height">35dp</dimen>
+    <dimen name="thread_holder_padding_left">10dp</dimen>
+    <dimen name="reeng_chat_option_between">7dp</dimen>
+    <dimen name="adapter_song_img">50dp</dimen>
+    <dimen name="adapter_song_heigh">70dp</dimen>
+    <dimen name="padding_normal">10dp</dimen>
+    <!-- Quick reply-->
+    <dimen name="quick_reply_height">255dp</dimen>
+    <dimen name="quick_reply_margin">19dp</dimen>
+    <dimen name="quick_reply_title_height">54dp</dimen>
+    <dimen name="quick_reply_content_padding">8dp</dimen>
+    <dimen name="quick_reply_margin_bottom">70dp</dimen>
+    <dimen name="quick_reply_sticker_height">48dp</dimen>
+    <dimen name="quick_miss_call_height">200dp</dimen>
+    <dimen name="action_bar_height">56dp</dimen>
+    <dimen name="action_bar_height_new">95dp</dimen>
+    <dimen name="detail_media_height">48dp</dimen>
+    <dimen name="detail_media_content_height">46dp</dimen>
+    <dimen name="voice_sticker_size">150dp</dimen>
+    <dimen name="voice_sticker_size_greeting">100dp</dimen>
+    <dimen name="voice_sticker_suggest_stranger_size">90dp</dimen>
+    <dimen name="emoticon_large_size">60dp</dimen>
+    <!-- more sticker layout  -->
+    <dimen name="more_sticker_height_discription">120dp</dimen>
+    <dimen name="more_sticker_height_discription_v1">105dp</dimen>
+    <dimen name="more_sticker_height_avatar">100dp</dimen>
+    <dimen name="rounded_image">8dip</dimen>
+    <dimen name="suggest_music_avatar">60dp</dimen>
+    <dimen name="button_reinvite_music_width">84dp</dimen>
+
+    <dimen name="margin_button_close_banner">50dp</dimen>
+    <dimen name="margin_bottom_button_play_banner">30dp</dimen>
+
+    <dimen name="sticker_button_width">160dp</dimen>
+    <dimen name="min_width_content_action_music">200dp</dimen>
+    <dimen name="holder_thumbnail_location_height">115dp</dimen>
+    <dimen name="holder_thumbnail_location_width">220dp</dimen>
+
+    <dimen name="height_notification">64dp</dimen>
+    <dimen name="item_thread_time_width">68dp</dimen>
+    <!--interger-->
+    <integer name="max_line_music">2</integer>
+    <integer name="max_line_status_detail">2</integer>
+
+    <dimen name="size_image_preview">230dp</dimen>
+    <dimen name="divider_grid_stranger_size">12dp</dimen>
+    <dimen name="size_preview_background">40dp</dimen>
+    <dimen name="margin_btn_try_music">9dp</dimen>
+    <!-- onmedia -->
+    <dimen name="height_item_share_like">30dp</dimen>
+    <dimen name="width_heih_button_player">35dp</dimen>
+    <dimen name="padding_normal_less">5dp</dimen>
+    <dimen name="height_post_status">40dp</dimen>
+    <dimen name="avatar_thumbnail_size_onmedia">33dp</dimen>
+    <dimen name="size_share_onmedia">40dp</dimen>
+
+    <dimen name="size_thumb_album">100dp</dimen>
+    <dimen name="size_thumb_song">127dp</dimen>
+    <dimen name="size_icon_play_song">30dp</dimen>
+    <dimen name="size_icon_play_album">40dp</dimen>
+    <dimen name="size_icon_play_video">40dp</dimen>
+    <dimen name="width_thumb_news">145dp</dimen>
+    <dimen name="height_thumb_news">112dp</dimen>
+    <dimen name="height_thumb_video">200dp</dimen>
+    <dimen name="height_thumb_item_song">55dp</dimen>
+    <dimen name="width_thumb_item_song">95dp</dimen>
+    <dimen name="size_thumb_audio_keeng">110dp</dimen>
+
+    <dimen name="width_thumb_news_mini">130dp</dimen>
+    <dimen name="height_thumb_news_mini">100dp</dimen>
+    <dimen name="height_thumb_video_mini">160dp</dimen>
+    <dimen name="height_thumb_item_song_mini">50dp</dimen>
+    <dimen name="width_thumb_item_song_mini">85dp</dimen>
+    <dimen name="min_height_img_horoscope">60dp</dimen>
+
+    <dimen name="margin_shadow">3dip</dimen>
+    <dimen name="transfer_money_padding_top">25dp</dimen>
+    <integer name="max_line_title_onmedia">4</integer>
+    <dimen name="progress_voice_mail_icon_h">45dp</dimen>
+    <dimen name="progress_voice_mail_icon_w">35dp</dimen>
+    <!-- thieu-->
+    <dimen name="abs__action_bar_default_height">48dip</dimen>
+    <dimen name="about_logo_layout_height">230dp</dimen>
+    <bool name="isTablet">false</bool>
+    <dimen name="sticker_new_stroke">1dp</dimen>
+    <dimen name="sticker_new_circle_size">30dp</dimen>
+    <dimen name="sticker_new_circle_corners">3dp</dimen>
+
+    <dimen name="bubble_margin_text">80dp</dimen>
+    <dimen name="buddle_margin_text_1">-80dp</dimen>
+
+    <dimen name="img_thumb_feed">90dp</dimen>
+    <dimen name="offset_offscreen_home_icon">-11dp</dimen>
+    <!--menu-->
+    <dimen name="divider_menu_height">1dp</dimen>
+    <dimen name="item_menu_height">60dp</dimen>
+    <!--Block fragment-->
+    <dimen name="bottom_height">50dp</dimen>
+    <dimen name="button_register_device_height">36dp</dimen>
+    <dimen name="button_user_like_chat_height">30dp</dimen>
+    <dimen name="button_user_like_chat_width">90dp</dimen>
+    <!--introduce-->
+    <dimen name="margin_bottom_indicator">10dp</dimen>
+    <dimen name="margin_left_ic_kakoak">20dp</dimen>
+    <dimen name="margin_top_ic_kakoak">10dp</dimen>
+    <dimen name="padding_intro_text">20dp</dimen>
+    <!-- banner invite-->
+    <dimen name="banner_invite_height">72dp</dimen>
+    <dimen name="banner_invite_image_size">72dp</dimen>
+    <!--multiwindow-->
+    <dimen name="app_defaultsize_w">632.0dip</dimen>
+    <dimen name="app_defaultsize_h">598.0dip</dimen>
+    <dimen name="app_minimumsize_w">632.0dip</dimen>
+    <dimen name="app_minimumsize_h">598.0dip</dimen>
+    <!--video activity-->
+    <dimen name="padding_control_button">10dp</dimen>
+    <!--album-->
+    <dimen name="mediacontrolpanel_padding_top">5dp</dimen>
+    <dimen name="mediacontrolpanel_button_padding">25dp</dimen>
+    <dimen name="mediacontrolpanel_padding_bot">5dp</dimen>
+
+    <dimen name="height_cover">200dp</dimen>
+    <dimen name="height_oval">150dp</dimen>
+    <dimen name="height_oval_hafl">75dp</dimen>
+    <dimen name="height_oval_hafl_revert">-75dp</dimen>
+    <dimen name="margin_oval">-50dp</dimen>
+    <dimen name="margin_bottom_avatar_profile">80dp</dimen>
+    <dimen name="height_image_small_profile">40dp</dimen>
+
+    <!--onmedia setting-->
+    <dimen name="list_item_height">180dp</dimen>
+    <dimen name="space_height">20dp</dimen>
+    <dimen name="text_padding">30dp</dimen>
+    <dimen name="grid_padding">20dp</dimen>
+    <dimen name="item_source_width">100dp</dimen>
+    <dimen name="item_source_icon">90dp</dimen>
+    <dimen name="item_source_height">120dp</dimen>
+    <dimen name="space_height_item_source">8dp</dimen>
+
+    <dimen name="row_game_padding">10dp</dimen>
+    <dimen name="right_padding">100dp</dimen>
+    <dimen name="button_download_game_width">100dp</dimen>
+    <dimen name="button_download_game_corners">15dp</dimen>
+    <dimen name="button_player_width">43dp</dimen>
+    <dimen name="padding_text_in_button">3dp</dimen>
+    <!--indicator-->
+    <dimen name="icon_padding">3dp</dimen>
+    <dimen name="tab_padding">1dp</dimen>
+    <dimen name="default_circle_indicator_radius">3dp</dimen>
+    <dimen name="default_circle_indicator_stroke_width">1dp</dimen>
+    <dimen name="default_line_indicator_gap_width">4dp</dimen>
+    <dimen name="default_line_indicator_line_width">12dp</dimen>
+    <dimen name="default_line_indicator_stroke_width">1dp</dimen>
+    <dimen name="default_title_indicator_clip_padding">4dp</dimen>
+    <dimen name="default_title_indicator_footer_indicator_height">4dp</dimen>
+    <dimen name="default_title_indicator_footer_indicator_underline_padding">20dp</dimen>
+    <dimen name="default_title_indicator_footer_line_height">2dp</dimen>
+    <dimen name="default_title_indicator_footer_padding">7dp</dimen>
+    <dimen name="default_title_indicator_text_size">15dp</dimen>
+    <dimen name="default_title_indicator_title_padding">5dp</dimen>
+    <dimen name="default_title_indicator_top_padding">7dp</dimen>
+
+    <dimen name="size_img_notify_number">16dp</dimen>
+    <dimen name="width_btn_upload_song">100dp</dimen>
+    <dimen name="zodiac_width">300dp</dimen>
+
+    <!--floating button-->
+    <dimen name="fab_size_normal">56dp</dimen>
+    <!--default mini 40-->
+    <dimen name="fab_size_mini">50dp</dimen>
+    <dimen name="fab_shadow_size">12dp</dimen>
+
+    <dimen name="fab_scroll_threshold">4dp</dimen>
+    <dimen name="fab_elevation_lollipop">8dp</dimen>
+    <dimen name="fab_press_translation_z">6dp</dimen>
+
+    <dimen name="progress_size_mini">20dp</dimen>
+    <dimen name="width_btn_onmedia_total">100dp</dimen>
+    <dimen name="ab_ic_room">17dp</dimen>
+
+    <!--tooltip showcase-->
+    <dimen name="simpletooltip_overlay_circle_offset">10dp</dimen>
+    <dimen name="overlay_circle_offset">-12dp</dimen>
+    <dimen name="simpletooltip_margin">10dp</dimen>
+    <dimen name="simpletooltip_padding">8dp</dimen>
+    <dimen name="simpletooltip_arrow_width">15dp</dimen>
+    <dimen name="simpletooltip_arrow_height">7dp</dimen>
+    <dimen name="simpletooltip_animation_padding">0dp</dimen>
+
+    <integer name="simpletooltip_overlay_alpha">120</integer>
+    <integer name="simpletooltip_animation_duration">800</integer>
+
+    <dimen name="height_image_horoscope">65dp</dimen>
+    <integer name="max_line_advertise">3</integer>
+    <dimen name="size_image_advertise">55dp</dimen>
+    <dimen name="size_image_intro_group">45dp</dimen>
+    <dimen name="holder_vote_height">50dp</dimen>
+    <dimen name="margin_call_button">15dp</dimen>
+
+    <!--Lucky wheel-->
+    <dimen name="wheel_radius">130dp</dimen>
+    <dimen name="wheel_size">280dp</dimen>
+    <dimen name="wheel_width_girl">70dp</dimen>
+    <dimen name="cursor_size">100dp</dimen>
+    <dimen name="margin_lucky_wheel">25dp</dimen>
+    <dimen name="margin_top_budget">10dp</dimen>
+    <dimen name="margin_lucky_wheel_button">20dp</dimen>
+    <dimen name="wheel_cover">322dp</dimen>
+    <dimen name="wheel_cover_height">386.4dp</dimen>
+    <dimen name="wheel_margin_top">21dp</dimen>
+
+    <dimen name="height_tablayout">50dp</dimen>
     <dimen name="fab_margin">16dp</dimen>
+    <dimen name="fab_margin_small">10dp</dimen>
+    <dimen name="width_kakoak_home_icon">100dp</dimen>
+
+    <dimen name="text_size_phone_number">34dp</dimen>
+
+    <dimen name="bdsv_item_view_height">85dp</dimen>
+    <dimen name="bdsv_video_thumb_width">125dp</dimen>
+    <dimen name="bdsv_video_thumb_height">70dp</dimen>
+    <dimen name="bdsv_item_video_height">84dp</dimen>
+    <dimen name="vip_margin">35dp</dimen>
+
+    <dimen name="radius_img_advertise">19px</dimen>
+    <dimen name="guest_min_size">20dp</dimen>
+    <dimen name="guest_book_item_default">100dp</dimen>
+    <dimen name="guest_book_background_width">90dp</dimen>
+    <dimen name="guest_book_background_height">160dp</dimen>
+    <dimen name="height_recyclerview_quick_news">70dp</dimen>
+    <dimen name="topic_confide_height">240dp</dimen>
+    <dimen name="topic_confide_height_item">40dp</dimen>
+
+    <!--new design-->
+    <dimen name="padding_item_left_right">17dp</dimen>
+
+    <dimen name="ab_home_conner">15dp</dimen>
+    <dimen name="ab_home_below">-20dp</dimen>
+    <dimen name="ab_home_padding_bottom">20dp</dimen>
+    <dimen name="ab_home_height">76dp</dimen>
+    <dimen name="status_bar_height">0dp</dimen>
+    <dimen name="status_bar_dialog_height">0dp</dimen>
+    <dimen name="more_header_height">96dp</dimen>
+    <dimen name="listview_divider_padding">15dp</dimen>
+    <dimen name="item_menu_height2">56dp</dimen>
+
+    <dimen name="detail_backdrop_height">256dp</dimen>
+    <dimen name="card_margin">16dp</dimen>
+    <dimen name="list_item_avatar_size">40dp</dimen>
+
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="icon_more_home_padding">23dp</dimen>
+    <dimen name="item_home_holder">78dp</dimen>
+    <dimen name="bottom_menu_item_height">44dp</dimen>
+    <dimen name="corner_search">20dp</dimen>
+    <dimen name="call_div_size_enable_video">172dp</dimen>
+    <dimen name="call_div_video">42dp</dimen>
+    <dimen name="home_contact_avatar">40dp</dimen>
+    <dimen name="home_favorite_width">95dp</dimen>
+    <dimen name="home_favorite_avatar">60dp</dimen>
+
+    <dimen name="textBody">18.0sp</dimen>
+    <dimen name="textCaption">16.0sp</dimen>
+    <dimen name="contentHeaderTitle">26.0sp</dimen>
+    <item name="lineSpacingMultiplier" type="dimen">1.1</item>
+
+    <item name="autoNextSieuHaiDuration" type="integer">3000</item>
+    <dimen name="register_logo_padding">50dp</dimen>
+    <dimen name="register_margin_top">90dp</dimen>
+    <dimen name="height_divider_profile">7dp</dimen>
+    <dimen name="action_bar_height_profile">56dp</dimen>
+    <dimen name="icon_action_profile_size">30dp</dimen>
+    <dimen name="typing_holder_type_height">42dp</dimen>
+    <dimen name="typing_holder_song_height">50dp</dimen>
+    <dimen name="typing_holder_video_height">60dp</dimen>
+    <dimen name="typing_holder_video_width">105dp</dimen>
+    <dimen name="typing_holder_song_width">230dp</dimen>
+    <dimen name="corner_radius_bubble_chat">10dp</dimen>
+    <dimen name="corner_radius_button_feed_om">15dp</dimen>
+    <dimen name="corner_radius_thumb_file">1dp</dimen>
+    <dimen name="size_ic_facebook_mini">18dp</dimen>
+    <dimen name="corner_radius_image_message_song">8dp</dimen>
+    <dimen name="corner_radius_button_profile">10dp</dimen>
+
+    <item name="ratio_profile_avatar" format="float" type="dimen">1.34</item>
+    <item name="ratio_profile_avatar_friend" format="float" type="dimen">1.8</item>
+    <integer name="max_length_name_profile">40</integer>
+
+    <dimen name="offset_my_profile_name">25dp</dimen>
+    <dimen name="notification_play_height">95dp</dimen>
+    <dimen name="notification_normal_play_height">56dp</dimen>
+
+    <dimen name="text_size_amount_money">50sp</dimen>
+    <dimen name="width_button_send_gift">250dp</dimen>
+    <dimen name="size_icon_lixi_dog">65dp</dimen>
+    <dimen name="height_button_holder_lixi">25dp</dimen>
+
+    <dimen name="chat_banner_lixi_width">320dp</dimen>
+    <dimen name="chat_banner_lixi_height">103dp</dimen>
+    <dimen name="chat_banner_lixi_btn_height">25dp</dimen>
+    <dimen name="chat_banner_lixi_text">14dp</dimen>
+
+    <dimen name="corner_item_post_content_onmedia">40dp</dimen>
+
+    <dimen name="tab_video_padding_normal">16dp</dimen>
+
+    <dimen name="tab_video_avatar_size">34dp</dimen>
+
+    <dimen name="tab_video_icon_size">45dp</dimen>
+    <dimen name="tab_video_icon_padding">2dp</dimen>
+
+    <dimen name="tab_video_image_video_width_medium">272dp</dimen>
+    <dimen name="tab_video_image_video_width_small">130dp</dimen>
+
+    <dimen name="tab_video_image_channel_size_big">50dp</dimen>
+    <dimen name="tab_video_image_channel_size_medium">34dp</dimen>
+
+    <dimen name="tab_video_text_normal_size">13sp</dimen>
+    <dimen name="tab_video_text_size_controller">14sp</dimen>
+    <dimen name="tab_video_text_size_title_video">15.6sp</dimen>
+    <dimen name="tab_video_text_size_title">16sp</dimen>
+
+    <dimen name="videoMargin">8dp</dimen>
+    <dimen name="videoPadding">16dp</dimen>
+    <dimen name="videoIconSize">40dp</dimen>
+    <dimen name="videoIconSizeBar">48dp</dimen>
+    <dimen name="videoShadowHeight">2dp</dimen>
+
+    <dimen name="videoEditTextMinHeight">48dp</dimen>
+    <dimen name="videoButtonMinHeight">38dp</dimen>
+    <dimen name="videoButtonMinWidth">200dp</dimen>
+
+    <dimen name="videoThumbnailWidth">160dp</dimen>
+    <dimen name="videoThumbnailHeight">90dp</dimen>
+
+    <dimen name="videoChannelAvatarSizeSecond">40dp</dimen>
+    <dimen name="videoChannelAvatarSizeThree">34dp</dimen>
+
+    <dimen name="videoTextSizeTitle">16sp</dimen>
+    <dimen name="videoTextSize">15sp</dimen>
+    <dimen name="videoTextSizeTwo">14sp</dimen>
+    <dimen name="videoTextSizeThree">13sp</dimen>
+    <dimen name="videoTextSizeFourth">12sp</dimen>
+    <dimen name="videoTextSizeFive">11sp</dimen>
+    <dimen name="videoTextSizeSix">10sp</dimen>
+    <dimen name="videoTextSizeTitleStatusBar">18sp</dimen>
+    <dimen name="videoTextSizeToolBar">20sp</dimen>
+
+    <dimen name="textSizeSmall">13sp</dimen>
+    <dimen name="textSizeDefault">16sp</dimen>
+    <dimen name="textSizeTitleDefault">18sp</dimen>
+    <dimen name="avatarChannelSizeDefault">40dp</dimen>
+
+    <dimen name="shadowHeight">10dp</dimen>
+    <dimen name="iconSizeDefault">45dp</dimen>
+    <dimen name="paddingDefault">16dp</dimen>
+    <dimen name="width_btn_avno">80dp</dimen>
+    <dimen name="width_btn_saving">80dp</dimen>
+
+    <!-- for read netnews-->
+    <dimen name="text_size_large_extra">26sp</dimen>
+    <dimen name="text_size_large">20sp</dimen>
+    <dimen name="text_size_header">18sp</dimen>
+    <dimen name="text_size_title">16sp</dimen>
+    <dimen name="text_size_second">14sp</dimen>
+    <dimen name="text_size_three">12sp</dimen>
+    <dimen name="text_size_player">12sp</dimen>
+    <dimen name="textContentHeader">24.0sp</dimen>
+    <dimen name="video_min_height">231dp</dimen>
+    <dimen name="spacing_normal">8dp</dimen>
+    <dimen name="padding_news">10dp</dimen>
+
+    <dimen name="width_reply_image">120dp</dimen>
+    <dimen name="height_reply_image">90dp</dimen>
+
+    <dimen name="max_height_drop_down_tag">160dp</dimen>
+    <dimen name="reaction_margin_top">-9dp</dimen>
+    <dimen name="reaction_margin_top_1">-5dp</dimen>
+    <dimen name="reaction_margin_bottom_7dp">-7dp</dimen>
+    <dimen name="corner_radius_saving_button">20dp</dimen>
+    <dimen name="height_item_audio_keeng_on_media">184dp</dimen>
+    <dimen name="size_icon_security">28dp</dimen>
+    <dimen name="corner_radius_security_button">20dp</dimen>
+    <dimen name="avatar_top_money_upload">56dp</dimen>
+    <dimen name="avatar_top_money_upload_header_small">64dp</dimen>
+    <dimen name="avatar_top_money_upload_header_big">90dp</dimen>
+    <dimen name="avatar_channel_info">60dp</dimen>
+    <dimen name="border_width_avatar_channel">0.5dp</dimen>
+    <dimen name="radius_data_package">8dp</dimen>
+    <dimen name="border_line_data_package">1dp</dimen>
+    <dimen name="height_logo_player">20dp</dimen>
+    <dimen name="margin_top_logo_player">12dp</dimen>
+    <dimen name="margin_bottom_logo_player">12dp</dimen>
+    <dimen name="radius_share_content_button">15dp</dimen>
+    <dimen name="alpha_border_video_episode">0.8</dimen>
+    <dimen name="margin_share_content_land">80dp</dimen>
+
+    <dimen name="width_icon_chat_setting">40dp</dimen>
+    <dimen name="v5_button_Setting_margin_right">10dp</dimen>
+    <dimen name="v5_txt_button_setting">12sp</dimen>
+    <dimen name="v5_row_setting_margin_top">10dp</dimen>
+    <dimen name="v5_dialog_corner_radius">20dp</dimen>
+    <dimen name="v5_max_width_title_dialog">200dp</dimen>
+    <dimen name="v5_txt_explain_setting_size">14dp</dimen>
+    <dimen name="avatar_call">300dp</dimen>
+    <dimen name="border_width_cover_movie">0.2dp</dimen>
+    <dimen name="border_width_cover_video">10dp</dimen>
+    <dimen name="border_width_banner_home">0.1dp</dimen>
+    <dimen name="border_width_cover_comic">0.2dp</dimen>
+    <dimen name="border_width_cover_news">0.2dp</dimen>
+    <dimen name="border_width_cover_tiin">0.2dp</dimen>
+    <dimen name="radius_movie_item">10dp</dimen>
+    <dimen name="radius_video_item">10dp</dimen>
+    <dimen name="radius_banner_home_item">10dp</dimen>
+    <dimen name="radius_comic_item">10dp</dimen>
+    <dimen name="radius_news_item">10dp</dimen>
+    <dimen name="radius_tiin_item">10dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+
+
+    <dimen name="search_text_title">15sp</dimen>
+    <dimen name="search_text_title_box">17sp</dimen>
+    <dimen name="search_text_desc">13sp</dimen>
+    <dimen name="search_size_icon_search">40dp</dimen>
+
+    <dimen name="search_image_radius">8dp</dimen>
+    <dimen name="search_padding_normal">16dp</dimen>
+    <dimen name="search_spacing_normal">8dp</dimen>
+    <dimen name="search_size_avatar_contact_more">36dp</dimen>
+    <dimen name="search_size_avatar_history">36dp</dimen>
 </resources>

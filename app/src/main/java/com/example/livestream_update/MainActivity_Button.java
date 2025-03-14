@@ -8,33 +8,36 @@ import androidx.appcompat.widget.AppCompatButton;
 import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentTransaction;
 
+import com.example.livestream_update.LiveStream.MainActivity_All_Channel.MainActivity_All_Channel;
+import com.example.livestream_update.LiveStream.MainActivity_Channel_Detail.MainActivity_Channel_Detail;
+import com.example.livestream_update.LiveStream.MainActivity_Channel_Detail.MainActivity_Channel_Detail_Fragment01;
+import com.example.livestream_update.LiveStream.MainActivity_Channel_Detail.MainActivity_Channel_Detail_Fragment02;
 
-import com.example.livestream_update.MainActivity_All_Channel.MainActivity_All_Channel;
-import com.example.livestream_update.MainActivity_Home.Fragment.MainActivity_Home_Fragment01;
-import com.example.livestream_update.MainActivity_Home.Fragment.MainActivity_Home_Fragment02;
-import com.example.livestream_update.MainActivity_Home.Fragment.MainActivity_Home_Fragment03;
-import com.example.livestream_update.MainActivity_Home.Fragment.MainActivity_Home_Fragment04;
-import com.example.livestream_update.MainActivity_Home.MainActivity_Home;
+import com.example.livestream_update.LiveStream.MainActivity_Home.Fragment.MainActivity_Home_Fragment01;
+import com.example.livestream_update.LiveStream.MainActivity_Home.Fragment.MainActivity_Home_Fragment02;
+import com.example.livestream_update.LiveStream.MainActivity_Home.Fragment.MainActivity_Home_Fragment03;
+import com.example.livestream_update.LiveStream.MainActivity_Home.Fragment.MainActivity_Home_Fragment04;
+import com.example.livestream_update.LiveStream.MainActivity_Home.MainActivity_Home;
 
-import com.example.livestream_update.MainActivity_List_LiveStream.Fragment.MainActivity_List_LiveStream_Fragment01;
-import com.example.livestream_update.MainActivity_List_LiveStream.Fragment.MainActivity_List_LiveStream_Fragment02;
-import com.example.livestream_update.MainActivity_List_LiveStream.Fragment.MainActivity_List_LiveStream_Fragment03;
-import com.example.livestream_update.MainActivity_List_LiveStream.MainActivity_List_LiveStream;
+import com.example.livestream_update.LiveStream.MainActivity_List_LiveStream.Fragment.MainActivity_List_LiveStream_Fragment01;
+import com.example.livestream_update.LiveStream.MainActivity_List_LiveStream.Fragment.MainActivity_List_LiveStream_Fragment02;
+import com.example.livestream_update.LiveStream.MainActivity_List_LiveStream.Fragment.MainActivity_List_LiveStream_Fragment03;
+import com.example.livestream_update.LiveStream.MainActivity_List_LiveStream.MainActivity_List_LiveStream;
 
-import com.example.livestream_update.MainActivity_Star.MainActivity_Star;
-import com.example.livestream_update.MainActivity_Star.MainActivity_Star_Fragment01;
+import com.example.livestream_update.LiveStream.MainActivity_Star.MainActivity_Star;
+import com.example.livestream_update.LiveStream.MainActivity_Star.MainActivity_Star_Fragment01;
 
-import com.example.livestream_update.MainActivity_Video_LiveStream.MainActivity_Video_LiveStream;
-
+import com.example.livestream_update.LiveStream.MainActivity_Video_LiveStream.MainActivity_Video_LiveStream;
 
 public class MainActivity_Button extends AppCompatActivity {
 
-    // Khai báo các Button
-    private AppCompatButton btnHomeFragment01, btnHomeFragment02, btnHomeFragment03, btnHomeFragment04, btnHomeFragment05;
-    private AppCompatButton btnListLiveStreamFragment01, btnListLiveStreamFragment02, btnListLiveStreamFragment03, btnListLiveStreamFragment04;
-    private AppCompatButton btnActivity_Star_Fragment01, btnActivity_Star_Fragment02;
-    private AppCompatButton btnActivity_All_List_LiveStream_Fragment02;
-    private AppCompatButton btnActivity_All_Channel;
+    // Khai báo các Button tương ứng với ID trong XML
+    private AppCompatButton btnHomeFragment01, btnHomeFragment02, btnHomeFragment03, btnHomeFragment04, btnHome;
+    private AppCompatButton btnListLiveStreamFragment01, btnListLiveStreamFragment02, btnListLiveStreamFragment03, btnListLiveStream;
+    private AppCompatButton btnStarFragment01, btnStar;
+    private AppCompatButton btnAllLiveStream;
+    private AppCompatButton btnAllChannel;
+    private AppCompatButton btnChannelDetailFragment01, btnChannelDetailFragment02, btnChannelDetail;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -46,63 +49,63 @@ public class MainActivity_Button extends AppCompatActivity {
         btnHomeFragment02 = findViewById(R.id.Activity_Home_Fragment02);
         btnHomeFragment03 = findViewById(R.id.Activity_Home_Fragment03);
         btnHomeFragment04 = findViewById(R.id.Activity_Home_Fragment04);
-        btnHomeFragment05 = findViewById(R.id.Activity_Home_Fragment05);
+        btnHome = findViewById(R.id.Activity_Home);
 
         btnListLiveStreamFragment01 = findViewById(R.id.Activity_List_LiveStream_Fragment01);
         btnListLiveStreamFragment02 = findViewById(R.id.Activity_List_LiveStream_Fragment02);
         btnListLiveStreamFragment03 = findViewById(R.id.Activity_List_LiveStream_Fragment03);
-        btnListLiveStreamFragment04 = findViewById(R.id.Activity_List_LiveStream_Fragment04);
+        btnListLiveStream = findViewById(R.id.Activity_List_LiveStream);
 
-        btnActivity_Star_Fragment01 = findViewById(R.id.Activity_Star_Fragment01);
-        btnActivity_Star_Fragment02 = findViewById(R.id.Activity_Star_Fragment02);
+        btnStarFragment01 = findViewById(R.id.Activity_Star_Fragment01);
+        btnStar = findViewById(R.id.Activity_Star);
 
-        btnActivity_All_List_LiveStream_Fragment02 = findViewById(R.id.Activity_All_List_LiveStream_Fragment01);
+        btnAllLiveStream = findViewById(R.id.Activity_All_List_LiveStream);
+        btnAllChannel = findViewById(R.id.Activity_All_Channel);
 
-        btnActivity_All_Channel = findViewById(R.id.Activity_All_Channel_button);
+        btnChannelDetailFragment01 = findViewById(R.id.Activity_Channel_Deatel_Fragment01);
+        btnChannelDetailFragment02 = findViewById(R.id.Activity_Channel_Deatel_Fragment02);
+        btnChannelDetail = findViewById(R.id.Activity_Channel_Deatel);
 
         // Thiết lập sự kiện onClick cho các Button
         btnHomeFragment01.setOnClickListener(v -> openFragment(new MainActivity_Home_Fragment01()));
         btnHomeFragment02.setOnClickListener(v -> openFragment(new MainActivity_Home_Fragment02()));
         btnHomeFragment03.setOnClickListener(v -> openFragment(new MainActivity_Home_Fragment03()));
         btnHomeFragment04.setOnClickListener(v -> openFragment(new MainActivity_Home_Fragment04()));
-        btnHomeFragment05.setOnClickListener(v -> {
+        btnHome.setOnClickListener(v -> {
             Intent intent = new Intent(MainActivity_Button.this, MainActivity_Home.class);
             startActivity(intent);
-//            finish();
         });
 
         btnListLiveStreamFragment01.setOnClickListener(v -> openFragment(new MainActivity_List_LiveStream_Fragment01()));
         btnListLiveStreamFragment02.setOnClickListener(v -> openFragment(new MainActivity_List_LiveStream_Fragment02()));
         btnListLiveStreamFragment03.setOnClickListener(v -> openFragment(new MainActivity_List_LiveStream_Fragment03()));
-        btnListLiveStreamFragment04.setOnClickListener(v -> {
+        btnListLiveStream.setOnClickListener(v -> {
             Intent intent = new Intent(MainActivity_Button.this, MainActivity_List_LiveStream.class);
             startActivity(intent);
-//            finish();
         });
 
-        btnActivity_Star_Fragment01.setOnClickListener(v -> openFragment(new MainActivity_Star_Fragment01()));
-        btnActivity_Star_Fragment02.setOnClickListener(v -> {
+        btnStarFragment01.setOnClickListener(v -> openFragment(new MainActivity_Star_Fragment01()));
+        btnStar.setOnClickListener(v -> {
             Intent intent = new Intent(MainActivity_Button.this, MainActivity_Star.class);
             startActivity(intent);
-//            finish();
         });
 
-        btnActivity_All_List_LiveStream_Fragment02.setOnClickListener(v -> {
+        btnAllLiveStream.setOnClickListener(v -> {
             Intent intent = new Intent(MainActivity_Button.this, MainActivity_Video_LiveStream.class);
             startActivity(intent);
         });
 
-        btnActivity_All_List_LiveStream_Fragment02.setOnClickListener(v -> {
-            Intent intent = new Intent(MainActivity_Button.this, MainActivity_Video_LiveStream.class);
-            startActivity(intent);
-        });
-
-        btnActivity_All_Channel.setOnClickListener(v -> {
+        btnAllChannel.setOnClickListener(v -> {
             Intent intent = new Intent(MainActivity_Button.this, MainActivity_All_Channel.class);
             startActivity(intent);
         });
 
-
+        btnChannelDetailFragment01.setOnClickListener(v -> openFragment(new MainActivity_Channel_Detail_Fragment01()));
+        btnChannelDetailFragment02.setOnClickListener(v -> openFragment(new MainActivity_Channel_Detail_Fragment02()));
+        btnChannelDetail.setOnClickListener(v -> {
+            Intent intent = new Intent(MainActivity_Button.this, MainActivity_Channel_Detail.class);
+            startActivity(intent);
+        });
     }
 
     // Hàm mở Fragment mới

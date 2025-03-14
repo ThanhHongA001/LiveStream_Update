@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LiveStream.MainActivity_Channel_Detail.MainActivity_Channel_Detail_Fragment01">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="15dp">
+
+        <!-- Thông tin kênh -->
+        <LinearLayout
+            android:id="@+id/ll_channel_info"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                style="@style/V5_Sub_Title_Semibold"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/introduction" />
+
+            <TextView
+                android:id="@+id/tv_channel_info"
+                style="@style/V5_OM_Time"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                tools:text="@string/register_vip_confirm"/>
+        </LinearLayout>
+
+        <!-- Ngày tạo kênh -->
+        <LinearLayout
+            android:id="@+id/ll_channel_create_date"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:orientation="vertical">
+
+            <TextView
+                style="@style/V5_Sub_Title_Semibold"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/video_channel_created_at" />
+
+            <TextView
+                android:id="@+id/tv_channel_create_date"
+                style="@style/V5_OM_Time"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                tools:text="@string/register_vip_confirm" />
+        </LinearLayout>
+
+        <!-- Phân tích kênh (ẩn mặc định) -->
+        <LinearLayout
+            android:id="@+id/ll_channel_analytics"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:visibility="gone"
+            android:orientation="vertical"
+            tools:visibility="visible">
+
+            <TextView
+                style="@style/V5_Sub_Title_Semibold"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/video_channel_analytics" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center">
+
+                <!-- Lượt xem chưa thanh toán -->
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="8dp">
+
+                    <ImageView
+                        android:id="@+id/iv_view_not_paid"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:srcCompat="@drawable/rm_ic_view_not_paid" />
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/tv_view_not_paid"
+                        style="@style/V5_Sub_Title_Bold"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_toEndOf="@id/iv_view_not_paid"
+                        android:ellipsize="end"
+                        android:lineSpacingExtra="10sp"
+                        android:maxLines="1"
+                        android:text="123,000"
+                        android:textColor="@color/color_0C05"
+                        android:textSize="16sp"
+                        android:layout_marginLeft="8dp"
+                        app:layout_constraintStart_toEndOf="@+id/iv_view_not_paid"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        style="@style/V5_Body_Text_Medium"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/tv_view_not_paid"
+                        android:layout_toEndOf="@id/iv_view_not_paid"
+                        android:ellipsize="end"
+                        android:maxLines="1"
+                        android:text="@string/view_not_paid"
+                        android:textColor="@color/color_6F6F"
+                        android:textSize="16sp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginLeft="8dp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintStart_toEndOf="@+id/iv_view_not_paid"
+                        app:layout_constraintTop_toBottomOf="@+id/tv_view_not_paid" />
+
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+                <!-- Doanh thu ước tính -->
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:padding="8dp">
+
+                    <ImageView
+                        android:id="@+id/iv_view_estimated"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:srcCompat="@drawable/rm_ic_view_estimated" />
+
+                    <TextView
+                        android:id="@+id/tv_view_estimated"
+                        style="@style/V5_Sub_Title_Bold"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="$123,000"
+                        android:textSize="16sp"
+                        android:layout_marginLeft="8dp"
+                        app:layout_constraintStart_toEndOf="@+id/iv_view_estimated"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        style="@style/V5_Body_Text_Medium"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/tv_view_estimated"
+                        android:layout_toEndOf="@id/iv_view_estimated"
+                        android:ellipsize="end"
+                        android:maxLines="1"
+                        android:text="@string/estimated_revenue"
+                        android:textColor="@color/color_6F6F"
+                        android:textSize="16sp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginLeft="8dp"
+                        app:layout_constraintStart_toEndOf="@+id/iv_view_estimated"
+                        app:layout_constraintTop_toBottomOf="@+id/tv_view_estimated" />
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</FrameLayout>
